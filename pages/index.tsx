@@ -4,7 +4,6 @@ import React from 'react'
 import { CalendarItem } from '../components/CalendarItem'
 import { numbers } from '../components/numbers'
 //import Snowfall from 'react-snowfall'
-import Link from 'next/link'
 
 
 export default function Home() {
