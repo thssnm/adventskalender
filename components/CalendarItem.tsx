@@ -54,14 +54,6 @@ export const CalendarItem = ({
     }
   }, [isActive, item.number]);
 
-  const highlightedNumbers = [""]; // ["4", "5", "6", "7", "18", "22", "23", "24"]
-
-  const borderStyle = highlightedNumbers.includes(item.number) && {
-    borderColor: "lightgray",
-    borderStyle: "solid",
-    borderWidth: 2,
-  };
-
   return (
     <>
       <div
@@ -81,7 +73,6 @@ export const CalendarItem = ({
           borderRadius: 12,
           cursor: "pointer",
           pointerEvents,
-          ...borderStyle,
         }}
       >
         <h2 style={{ color: "white" }}>{item.number}</h2>
