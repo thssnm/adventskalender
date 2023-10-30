@@ -10,6 +10,12 @@ export const Overlay = ({
   visible: boolean;
   setVisible: (value: boolean) => void;
 }) => {
+  const [windowWidth, setWindowWidth] = React.useState(0);
+  React.useEffect(() => {
+    const width = window.innerWidth;
+    setWindowWidth(width);
+  }, []);
+
   const [showSpoiler, toggleShowSpoiler] = React.useState(false);
   if (!visible) {
     return null;
@@ -31,27 +37,26 @@ export const Overlay = ({
       style={{
         backgroundColor: "rgba(0,0,0,0.8)",
         position: "absolute",
+        width: "100%",
         top: 20,
         left: 0,
         right: 0,
         bottom: 0,
         display: "flex",
         justifyContent: "center",
-        alignItems: "center",
       }}
     >
       <div
         style={{
           width: "80%",
-          maxWidth: 700,
           height: "70%",
-          maxHeight: 500,
           backgroundColor: "#828282cd",
           borderRadius: 12,
           padding: 24,
           overflowY: "scroll",
           borderColor: "white",
           borderWidth: 22,
+          marginTop: windowWidth < 500 ? 150 : 220,
         }}
       >
         <div
@@ -65,19 +70,30 @@ export const Overlay = ({
             onClick={() => setVisible(false)}
             style={{
               cursor: "pointer",
-              backgroundColor: "white",
               borderRadius: 25,
               width: 50,
               height: 50,
-
-              textAlign: "center",
+              marginRight: 22,
             }}
           >
-            <p style={{ color: "black" }}>X</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="50px"
+              viewBox="0 0 24 24"
+              width="50px"
+              fill="#fff"
+            >
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+            </svg>
           </div>
         </div>
 
-        <div style={{ color: "white" }}>
+        <div
+          style={{
+            color: "white",
+          }}
+        >
           {item.brewAdvices ? (
             <p style={{ fontStyle: "italic" }}>Bruehempfehlung: </p>
           ) : null}

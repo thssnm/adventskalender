@@ -15,7 +15,7 @@ export default function Home() {
       <Head>
         <title>Kaffee Netz Adventskalender</title>
       </Head>
-      <main className={styles.main}>
+      <main className={styles.main} style={{ height: "20vh" }}>
         {showSnow ? <Snowfall /> : null}
         {count > 9 && (
           <p style={{ position: "absolute", top: 0 }}>god mode activated!</p>
@@ -25,45 +25,35 @@ export default function Home() {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            fontSize: "2em",
             marginTop: 24,
             color: "white",
           }}
         >
-          <p onClick={() => setCount(count + 1)}>Kaffee-Netz</p>
+          <h1 onClick={() => setCount(count + 1)}>Kaffee-Netz</h1>
         </div>
-        <p
+        <h2
           style={{
-            fontSize: "1.2em",
             marginTop: -24,
             color: "white",
           }}
         >
           Adventskalender 2023
-        </p>
+        </h2>
         <div
           style={{
-            backgroundSize: "cover",
-            opacity: 0.8,
-            borderRadius: 12,
+            flexDirection: "row",
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+            maxWidth: "80%",
+            minWidth: 370,
+            height: "60%",
+            minHeight: 500,
           }}
         >
-          <div
-            style={{
-              flexDirection: "row",
-              display: "flex",
-              flexWrap: "wrap",
-              justifyContent: "space-between",
-              maxWidth: 450,
-              minWidth: 370,
-            }}
-          >
-            {numbers.map((item) => {
-              return (
-                <CalendarItem key={item.number} item={item} count={count} />
-              );
-            })}
-          </div>
+          {numbers.map((item) => {
+            return <CalendarItem key={item.number} item={item} count={count} />;
+          })}
         </div>
       </main>
     </div>

@@ -61,10 +61,8 @@ export const CalendarItem = ({
         style={{
           minWidth: 50,
           minHeight: 50,
-          maxHeight: 100,
-          maxWidth: 100,
-          width: windowWidth > 444 ? 80 : windowWidth > 500 ? 100 : 65,
-          height: windowWidth > 444 ? 80 : windowWidth > 500 ? 100 : 65,
+          width: "20%",
+          height: "15%",
           margin: 6,
           display: "flex",
           alignItems: "center",
