@@ -1,26 +1,26 @@
 export type CalendarItemType = {
-  number: string;
-  title: string;
-  text: string;
+  number: string | undefined;
+  title: string | undefined;
+  text: string | undefined;
   brewAdvices: {
-    brewer: string;
-    grinding: string;
-    temperature: string;
-    ratio: string;
-    time: string;
-    notes: string;
+    brewer: string | undefined;
+    grinding: string | undefined;
+    temperature: string | undefined;
+    ratio: string | undefined;
+    time: string | undefined;
+    notes: string | undefined;
   };
   additionalInfos: {
-    roastery: string;
-    name: string;
-    city: string;
-    taste: string;
-    roast: string;
-    variety: string;
-    region: string;
-    processing: string;
-    recommendation: string;
-    url: string;
+    roastery: string | undefined;
+    name: string | undefined;
+    city: string | undefined;
+    taste: string | undefined;
+    roast: string | undefined;
+    variety: string | undefined;
+    region: string | undefined;
+    processing: string | undefined;
+    recommendation: string | undefined;
+    url: string | undefined;
   };
 };
 
