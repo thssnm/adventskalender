@@ -14,16 +14,16 @@ body,
 @media (min-width: 1200px) {
   :root {
     --fs-xl: 4rem;
-    --fs-600: 3rem;
-    --fs-400: 2.3rem;
+    --fs-600: 2.3rem;
+    --fs-400: 1.5rem;
   }
 }
 
 @media (max-width: 1200px) {
   :root {
-    --fs-xl: 4rem;
-    --fs-600: 2rem;
-    --fs-400: 1.6rem;
+    --fs-xl: 5rem;
+    --fs-600: 3rem;
+    --fs-400: 2rem;
   }
 }
 
