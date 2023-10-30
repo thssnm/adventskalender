@@ -1,33 +1,43 @@
+type BrewAdvices =
+  | {
+      brewer?: string | undefined;
+      grinding?: string | undefined;
+      temperature?: string | undefined;
+      ratio?: string | undefined;
+      time?: string | undefined;
+      notes?: string | undefined;
+    }
+  | undefined;
+
+type AdditionalInfos =
+  | {
+      roastery?: string | undefined;
+      name?: string | undefined;
+      city?: string | undefined;
+      taste?: string | undefined;
+      roast?: string | undefined;
+      variety?: string | undefined;
+      region?: string | undefined;
+      processing?: string | undefined;
+      recommendation?: string | undefined;
+      url?: string | undefined;
+    }
+  | undefined;
+
 export type CalendarItemType = {
   number: string | undefined;
-  title: string | undefined;
-  text: string | undefined;
-  brewAdvices: {
-    brewer: string | undefined;
-    grinding: string | undefined;
-    temperature: string | undefined;
-    ratio: string | undefined;
-    time: string | undefined;
-    notes: string | undefined;
-  };
-  additionalInfos: {
-    roastery: string | undefined;
-    name: string | undefined;
-    city: string | undefined;
-    taste: string | undefined;
-    roast: string | undefined;
-    variety: string | undefined;
-    region: string | undefined;
-    processing: string | undefined;
-    recommendation: string | undefined;
-    url: string | undefined;
-  };
+  title?: string | undefined;
+  text?: string | undefined;
+  brewAdvices?: BrewAdvices | undefined;
+  additionalInfos?: AdditionalInfos | undefined;
 };
 
 export type Numbers = CalendarItemType[];
 
 export const numbers: Numbers = [
-  { number: "10", title: "title", text: "" },
+  {
+    number: "10",
+  },
   { number: "12", title: "title", text: "" },
   {
     number: "1",
