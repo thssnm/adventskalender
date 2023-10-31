@@ -50,7 +50,7 @@ export default function Home() {
             display: "flex",
             flexWrap: "wrap",
             justifyContent: "space-between",
-            maxWidth: "80%",
+            maxWidth: 800,
             minWidth: 370,
             height: "60%",
             minHeight: 500,

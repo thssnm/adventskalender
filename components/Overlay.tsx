@@ -50,7 +50,7 @@ export const Overlay = ({
         style={{
           width: "80%",
           height: "70%",
-          maxWidth: 900,
+          maxWidth: 700,
           backgroundColor: "#828282cd",
           borderRadius: 12,
           padding: 24,
