@@ -11,45 +11,59 @@ body,
   --fs-400: 2.3rem;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
   :root {
-    --fs-xl: 4rem;
-    --fs-600: 2.3rem;
+    --fs-xl: 2rem;
+    --fs-600: 1.5rem;
+    --fs-400: 1rem;
+  }
+}
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+
+  :root {
+    --fs-xl: 2.3rem;
+    --fs-600: 1.7rem;
+    --fs-400: 1.3rem;
+  }
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+
+  :root {
+    --fs-xl: 2.5rem;
+    --fs-600: 1.9rem;
     --fs-400: 1.5rem;
   }
 }
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
 
-@media (max-width: 1200px) {
+  :root {
+    --fs-xl: 3rem;
+    --fs-600: 2.3rem;
+    --fs-400: 1.3rem;
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+
+  :root {
+    --fs-xl: 3rem;
+    --fs-600: 2.3rem;
+    --fs-400: 1.3rem;
+  }
+}
+/* hi-res laptops and desktops */
+/* @media (min-width: 1281px) {
+
   :root {
     --fs-xl: 5rem;
     --fs-600: 3rem;
     --fs-400: 2rem;
   }
-}
-
-@media (max-width: 1000px) {
-  :root {
-    --fs-xl: 2.2rem;
-    --fs-600: 1.8rem;
-    --fs-400: 1.6rem;
-  }
-}
-
-@media (max-width: 800px) {
-  :root {
-    --fs-xl: 2rem;
-    --fs-600: 1.6rem;
-    --fs-400: 1.4rem;
-  }
-}
-
-@media (max-width: 600px) {
-  :root {
-    --fs-xl: 1.8rem;
-    --fs-600: 1.4rem;
-    --fs-400: 1rem;
-  }
-}
+} */
 
 html {
   height: 100%;

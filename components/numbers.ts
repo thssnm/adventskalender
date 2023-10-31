@@ -27,7 +27,7 @@ type AdditionalInfos =
 export type CalendarItemType = {
   number: string | undefined;
   title?: string | undefined;
-  text?: string | undefined;
+  userName?: string | undefined;
   brewAdvices?: BrewAdvices | undefined;
   additionalInfos?: AdditionalInfos | undefined;
 };
@@ -38,21 +38,21 @@ export const numbers: Numbers = [
   {
     number: "10",
   },
-  { number: "12", title: "title", text: "" },
+  { number: "12", title: "title", userName: "" },
   {
     number: "1",
     title: "title",
-    text: "Herzlich willkommen zum diesjährigen Adventskalender",
+    userName: "Herzlich willkommen zum diesjährigen Adventskalender",
   },
-  { number: "9", title: "title", text: "" },
-  { number: "17", title: "title", text: "" },
-  { number: "8", title: "title", text: "" },
-  { number: "6", title: "title", text: "" },
-  { number: "18", title: "title", text: "" },
+  { number: "9", title: "title", userName: "" },
+  { number: "17", title: "title", userName: "" },
+  { number: "8", title: "title", userName: "" },
+  { number: "6", title: "title", userName: "" },
+  { number: "18", title: "title", userName: "" },
   {
     number: "2",
     title: "title",
-    text: "",
+    userName: "",
     brewAdvices: {
       brewer: "Orea V3",
       grinding: "Comandante 19 Clicks",
@@ -74,24 +74,24 @@ export const numbers: Numbers = [
       url: "https://www.cafemundus.com/products/athiopien-hambela?variant=46614488285508",
     },
   },
-  { number: "23", title: "title", text: "" },
-  { number: "13", title: "title", text: "" },
-  { number: "21", title: "title", text: "" },
-  { number: "5", title: "title", text: "" },
-  { number: "20", title: "title", text: "" },
-  { number: "3", title: "title", text: "" },
-  { number: "24", title: "title", text: "" },
-  { number: "19", title: "title", text: "" },
-  { number: "7", title: "title", text: "" },
-  { number: "15", title: "title", text: "" },
-  { number: "4", title: "title", text: "" },
-  { number: "16", title: "title", text: "" },
-  { number: "22", title: "title", text: "" },
-  { number: "11", title: "title", text: "" },
+  { number: "23", title: "title", userName: "" },
+  { number: "13", title: "title", userName: "" },
+  { number: "21", title: "title", userName: "" },
+  { number: "5", title: "title", userName: "" },
+  { number: "20", title: "title", userName: "" },
+  { number: "3", title: "title", userName: "" },
+  { number: "24", title: "title", userName: "" },
+  { number: "19", title: "title", userName: "" },
+  { number: "7", title: "title", userName: "" },
+  { number: "15", title: "title", userName: "" },
+  { number: "4", title: "title", userName: "" },
+  { number: "16", title: "title", userName: "" },
+  { number: "22", title: "title", userName: "" },
+  { number: "11", title: "title", userName: "" },
   {
     number: "14",
     title: "title",
-    text: "",
+    userName: "",
   },
 ];
 
@@ -100,7 +100,7 @@ export const numbers: Numbers = [
 {
     number: "",
     title: "",
-    text: "",
+    userName: "",
     brewAdvices: {
       brewer: "",
       grinding: "",

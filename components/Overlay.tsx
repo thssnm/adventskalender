@@ -50,6 +50,7 @@ export const Overlay = ({
         style={{
           width: "80%",
           height: "70%",
+          maxWidth: 900,
           backgroundColor: "#828282cd",
           borderRadius: 12,
           padding: 24,
@@ -78,9 +79,9 @@ export const Overlay = ({
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              height="50px"
+              height="3rem"
               viewBox="0 0 24 24"
-              width="50px"
+              width="3rem"
               fill="#fff"
             >
               <path d="M0 0h24v24H0V0z" fill="none" />

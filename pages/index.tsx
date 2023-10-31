@@ -15,7 +15,12 @@ export default function Home() {
       <Head>
         <title>Kaffee Netz Adventskalender</title>
       </Head>
-      <main className={styles.main} style={{ height: "20vh" }}>
+      <main
+        className={styles.main}
+        style={{
+          height: "20vh",
+        }}
+      >
         {showSnow ? <Snowfall /> : null}
         {count > 9 && (
           <p style={{ position: "absolute", top: 0 }}>god mode activated!</p>
