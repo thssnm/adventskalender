@@ -4,6 +4,7 @@ import React from "react";
 import { CalendarItem } from "../components/CalendarItem";
 import { numbers } from "../components/numbers";
 import Snowfall from "react-snowfall";
+import { ColorSchemeScript } from "@mantine/core";
 
 export default function Home() {
   const [count, setCount] = React.useState(0);
@@ -14,6 +15,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Kaffee Netz Adventskalender</title>
+        <ColorSchemeScript />
       </Head>
       <main
         className={styles.main}

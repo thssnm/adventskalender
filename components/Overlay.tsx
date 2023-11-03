@@ -1,5 +1,6 @@
 import React from "react";
 import { CalendarItemType } from "./numbers";
+import { Accordion } from "@mantine/core";
 
 export const Overlay = ({
   item,
@@ -16,7 +17,6 @@ export const Overlay = ({
     setWindowWidth(width);
   }, []);
 
-  const [showSpoiler, toggleShowSpoiler] = React.useState(false);
   if (!visible) {
     return null;
   }
@@ -27,10 +27,6 @@ export const Overlay = ({
 
   const additionalInfos =
     isOldItem || (hour >= 19 && time.getDay() === Number(item.number));
-
-  const spoilerText = additionalInfos
-    ? "Aufloesung"
-    : "Aufloesung erst ab 19 Uhr";
 
   return (
     <div
@@ -89,14 +85,13 @@ export const Overlay = ({
             </svg>
           </div>
         </div>
-
         <div
           style={{
             color: "white",
           }}
         >
           {item.brewAdvices ? (
-            <p style={{ fontStyle: "italic" }}>Bruehempfehlung: </p>
+            <p style={{ fontStyle: "italic" }}>Brühempfehlung: </p>
           ) : null}
           {item.brewAdvices?.brewer ? <p>{item.brewAdvices?.brewer}</p> : null}
           {item.brewAdvices?.grinding ? (
@@ -111,46 +106,11 @@ export const Overlay = ({
             <p>Anmerkungen: {item.brewAdvices?.notes}</p>
           ) : null}
         </div>
-        <div
-          style={{
-            borderRadius: 2,
-            borderColor: "white",
-            borderWidth: 2,
-            borderStyle: "solid",
-            backgroundColor: "#afadadcd",
-          }}
-        >
-          <div
-            onClick={() => toggleShowSpoiler(!showSpoiler)}
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              paddingRight: 8,
-            }}
-          >
-            <p
-              style={{
-                cursor: "pointer",
-                padding: 8,
-              }}
-            >
-              {showSpoiler ? "Zuklappen" : spoilerText}
-            </p>
-            <p>
-              {showSpoiler
-                ? String.fromCharCode(11014)
-                : String.fromCharCode(11015)}
-            </p>
-          </div>
-          {showSpoiler ? (
-            <div
-              style={{
-                backgroundColor: "#525252cd",
-                padding: 8,
-                width: "100%",
-              }}
-            >
+
+        <Accordion variant="separated" radius="md" defaultValue="Apples">
+          <Accordion.Item key={0} value={"Auflösung"}>
+            <Accordion.Control>{"Auflösung"}</Accordion.Control>
+            <Accordion.Panel>
               {additionalInfos ? (
                 <div>
                   {item.additionalInfos?.roastery ? (
@@ -186,7 +146,7 @@ export const Overlay = ({
                       href={item.additionalInfos?.url}
                       rel="noopener noreferrer"
                       style={{
-                        color: "lightblue",
+                        color: "blue",
                         textDecoration: "underline",
                       }}
                     >
@@ -195,11 +155,11 @@ export const Overlay = ({
                   ) : null}
                 </div>
               ) : (
-                <p>Die Aufloesung gibt es wie immer erst um 19 Uhr.</p>
+                <p>Die Auflösung gibt es wie immer erst um 19 Uhr.</p>
               )}
-            </div>
-          ) : null}
-        </div>
+            </Accordion.Panel>
+          </Accordion.Item>
+        </Accordion>
       </div>
     </div>
   );

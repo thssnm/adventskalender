@@ -38,12 +38,6 @@ export const CalendarItem = ({
     }
   };
 
-  const [windowWidth, setWindowWidth] = React.useState(0);
-  React.useEffect(() => {
-    const width = window.innerWidth;
-    setWindowWidth(width);
-  }, []);
-
   React.useEffect(() => {
     if (isActive) {
       setBackgroundColor("rgba(172, 246, 200, 0.7)");
