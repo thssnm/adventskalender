@@ -1,6 +1,7 @@
 import React from "react";
 import { Overlay } from "./Overlay";
 import { CalendarItemType } from "./numbers";
+import { Box, Modal } from "@mui/material";
 
 export const CalendarItem = ({
   item,
@@ -9,10 +10,10 @@ export const CalendarItem = ({
   item: CalendarItemType;
   count: number;
 }) => {
-  const [visible, setVisible] = React.useState(false);
   const [backgroundColor, setBackgroundColor] = React.useState(
     "rgba(217, 30, 24,0.5)"
   );
+
   const [pointerEvents, setPointerEvents] = React.useState<
     | "auto"
     | "none"
@@ -33,17 +34,23 @@ export const CalendarItem = ({
     count > 9;
 
   const onPressItem = () => {
-    if (isActive) {
-      setVisible(!visible);
+    if (open) {
+      handleClose();
+    } else {
+      handleOpen();
     }
   };
 
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   React.useEffect(() => {
     if (isActive) {
-      setBackgroundColor("rgba(172, 246, 200, 0.7)");
+      setBackgroundColor("rgba(0,135,62, 0.9)");
       setPointerEvents("auto");
     } else {
-      setBackgroundColor("rgba(217, 30, 24,0.7)");
+      setBackgroundColor("rgba(214,0,28, 0.9)");
       setPointerEvents("none");
     }
   }, [isActive, item.number]);
@@ -69,7 +76,30 @@ export const CalendarItem = ({
       >
         <h2 style={{ color: "white" }}>{item.number}</h2>
       </div>
-      <Overlay visible={visible} item={item} setVisible={setVisible} />
+
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <Overlay item={item} setVisible={handleClose} />
+        </Box>
+      </Modal>
     </>
   );
+};
+
+const style = {
+  position: "absolute" as "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 400,
+  bgcolor: "gray",
+  border: "2px solid #000",
+  boxShadow: 24,
+  p: 4,
+  borderRadius: 6,
 };
