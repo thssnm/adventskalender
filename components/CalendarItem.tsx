@@ -6,9 +6,11 @@ import { Box, Modal } from "@mui/material";
 export const CalendarItem = ({
   item,
   count,
+  devmode,
 }: {
   item: CalendarItemType;
   count: number;
+  devmode: boolean;
 }) => {
   const [backgroundColor, setBackgroundColor] = React.useState(
     "rgba(217, 30, 24,0.5)"
@@ -28,9 +30,11 @@ export const CalendarItem = ({
     | "inherit"
   >("none");
 
+  const number = devmode ? 10 : 11;
+
   const isActive =
     (Number(item.number) <= new Date().getDate() &&
-      new Date().getMonth() === 11) ||
+      new Date().getMonth() === number) ||
     count > 9;
 
   const onPressItem = () => {
@@ -80,6 +84,7 @@ export const CalendarItem = ({
       <Modal
         open={open}
         onClose={handleClose}
+        style={{ borderRadius: 12 }}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
@@ -96,10 +101,13 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 400,
+  width: "90%",
+  maxWidth: 800,
   bgcolor: "gray",
   border: "2px solid #000",
   boxShadow: 24,
   p: 4,
   borderRadius: 6,
+  overflowY: "auto",
+  maxHeight: "90%",
 };

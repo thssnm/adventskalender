@@ -8,7 +8,10 @@ import Snowfall from "react-snowfall";
 export default function Home() {
   const [count, setCount] = React.useState(0);
 
-  const showSnow = new Date().getMonth() === 11;
+  // ---- toggle bevor pushing -----
+  const devmode = false;
+
+  const showSnow = new Date().getMonth() === 11 || devmode;
 
   return (
     <div className={styles.container}>
@@ -57,7 +60,14 @@ export default function Home() {
           }}
         >
           {numbers.map((item) => {
-            return <CalendarItem key={item.number} item={item} count={count} />;
+            return (
+              <CalendarItem
+                key={item.number}
+                item={item}
+                count={count}
+                devmode={devmode}
+              />
+            );
           })}
         </div>
       </main>
