@@ -4,6 +4,8 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { CalendarItemType } from "./numbers";
+import { ThemeProvider, Typography } from "@mui/material";
+import { theme } from "../pages";
 
 export default function BasicAccordion({
   additionalInfos,
@@ -19,6 +21,8 @@ export default function BasicAccordion({
       setExpanded(newExpanded ? panel : false);
     };
 
+  const body1 = "body1";
+
   return (
     <div>
       <Accordion
@@ -31,32 +35,39 @@ export default function BasicAccordion({
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <p
+          <Typography
+            variant={body1}
             color={additionalInfos ? "black" : " white"}
             style={{ fontWeight: "bold" }}
           >
             Brühempfehlung
-          </p>
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          {item.brewAdvices?.brewer ? (
-            <p style={pstyle}>{item.brewAdvices?.brewer}</p>
-          ) : null}
-          {item.brewAdvices?.grinding ? (
-            <p style={pstyle}>{item.brewAdvices?.grinding}</p>
-          ) : null}
-          {item.brewAdvices?.temperature ? (
-            <p style={pstyle}>{item.brewAdvices?.temperature}</p>
-          ) : null}
-          {item.brewAdvices?.ratio ? (
-            <p style={pstyle}>{item.brewAdvices?.ratio}</p>
-          ) : null}
-          {item.brewAdvices?.time ? (
-            <p style={pstyle}>{item.brewAdvices?.time}</p>
-          ) : null}
-          {item.brewAdvices?.notes ? (
-            <p style={pstyle}>Anmerkungen: {item.brewAdvices?.notes}</p>
-          ) : null}
+          <ThemeProvider theme={theme}>
+            <Typography variant={body1}>
+              {item.brewAdvices?.brewer ? item.brewAdvices?.brewer : null}
+            </Typography>
+            <Typography variant={body1}>
+              {item.brewAdvices?.grinding ? item.brewAdvices?.grinding : null}
+            </Typography>
+            <Typography variant={body1}>
+              {item.brewAdvices?.temperature
+                ? item.brewAdvices?.temperature
+                : null}
+            </Typography>
+            <Typography variant={body1}>
+              {item.brewAdvices?.ratio ? item.brewAdvices?.ratio : null}
+            </Typography>
+            <Typography variant={body1}>
+              {item.brewAdvices?.time ? item.brewAdvices?.time : null}
+            </Typography>
+            <Typography variant={body1}>
+              {item.brewAdvices?.notes
+                ? "Anmerkungen: " + item.brewAdvices?.notes
+                : null}
+            </Typography>
+          </ThemeProvider>
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -70,47 +81,62 @@ export default function BasicAccordion({
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <p
+          <Typography
+            variant={body1}
             color={additionalInfos ? "black" : " white"}
             style={{ fontWeight: "bold" }}
           >
             {additionalInfos
               ? "Auflösung"
               : "Die Auflösung gibt es wie immer erst um 19 Uhr."}
-          </p>
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          {item.additionalInfos?.roastery ? (
-            <p style={pstyle}>Rösterei: {item.additionalInfos?.roastery}</p>
-          ) : null}
-          {item.additionalInfos?.name ? (
-            <p style={pstyle}>Name: {item.additionalInfos?.name}</p>
-          ) : null}
-          {item.additionalInfos?.city ? (
-            <p style={pstyle}>Stadt: {item.additionalInfos?.city}</p>
-          ) : null}
-          {item.additionalInfos?.taste ? (
-            <p style={pstyle}>Geschmack: {item.additionalInfos?.taste}</p>
-          ) : null}
-          {item.additionalInfos?.roast ? (
-            <p style={pstyle}>Röstung: {item.additionalInfos?.roast}</p>
-          ) : null}
-          {item.additionalInfos?.variety ? (
-            <p style={pstyle}>Varität: {item.additionalInfos?.variety}</p>
-          ) : null}
-          {item.additionalInfos?.region ? (
-            <p style={pstyle}>Region: {item.additionalInfos?.region}</p>
-          ) : null}
-          {item.additionalInfos?.processing ? (
-            <p style={pstyle}>
-              Aufbereitung: {item.additionalInfos?.processing}
-            </p>
-          ) : null}
-          {item.additionalInfos?.recommendation ? (
-            <p style={pstyle}>
-              Empfohlen für: {item.additionalInfos?.recommendation}
-            </p>
-          ) : null}
+          <Typography variant={body1}>
+            {item.additionalInfos?.roastery
+              ? "Rösterei: " + item.additionalInfos?.roastery
+              : null}
+          </Typography>
+          <Typography variant={body1}>
+            {item.additionalInfos?.name
+              ? "Name: " + item.additionalInfos?.name
+              : null}
+          </Typography>
+          <Typography variant={body1}>
+            {item.additionalInfos?.city
+              ? "Stadt: " + item.additionalInfos?.city
+              : null}
+          </Typography>
+          <Typography variant={body1}>
+            {item.additionalInfos?.taste
+              ? "Geschmack: " + item.additionalInfos?.taste
+              : null}
+          </Typography>
+          <Typography variant={body1}>
+            {item.additionalInfos?.roast
+              ? "Röstung: " + item.additionalInfos?.roast
+              : null}
+          </Typography>
+          <Typography variant={body1}>
+            {item.additionalInfos?.variety
+              ? "Varität: " + item.additionalInfos?.variety
+              : null}
+          </Typography>
+          <Typography variant={body1}>
+            {item.additionalInfos?.region
+              ? "Region: " + item.additionalInfos?.region
+              : null}
+          </Typography>
+          <Typography variant={body1}>
+            {item.additionalInfos?.processing
+              ? "Aufbereitung: " + item.additionalInfos?.processing
+              : null}
+          </Typography>
+          <Typography variant={body1}>
+            {item.additionalInfos?.recommendation
+              ? "Empfohlen für: " + item.additionalInfos?.recommendation
+              : null}
+          </Typography>
           {item.additionalInfos?.url ? (
             <a
               target="_blank"
@@ -121,7 +147,7 @@ export default function BasicAccordion({
                 textDecoration: "underline",
               }}
             >
-              <p style={pstyle}>Link</p>
+              Link
             </a>
           ) : null}
         </AccordionDetails>

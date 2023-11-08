@@ -5,6 +5,16 @@ import { CalendarItem } from "../components/CalendarItem";
 import { numbers } from "../components/numbers";
 import Snowfall from "react-snowfall";
 
+import {
+  ThemeProvider,
+  createTheme,
+  responsiveFontSizes,
+} from "@mui/material/styles";
+import { Typography } from "@mui/material";
+
+export let theme = createTheme();
+theme = responsiveFontSizes(theme);
+
 export default function Home() {
   const [count, setCount] = React.useState(0);
 
@@ -37,16 +47,27 @@ export default function Home() {
             color: "white",
           }}
         >
-          <h1 onClick={() => setCount(count + 1)}>Kaffee-Netz</h1>
+          <ThemeProvider theme={theme}>
+            <Typography
+              onClick={() => setCount(count + 1)}
+              variant="h2"
+              style={{ marginBottom: 22 }}
+            >
+              Kaffee-Netz
+            </Typography>
+          </ThemeProvider>
         </div>
-        <h2
-          style={{
-            marginTop: -24,
-            color: "white",
-          }}
-        >
-          Adventskalender 2023
-        </h2>
+        <ThemeProvider theme={theme}>
+          <Typography
+            variant="h3"
+            style={{
+              marginTop: -24,
+              color: "white",
+            }}
+          >
+            Adventskalender 2023
+          </Typography>
+        </ThemeProvider>
         <div
           style={{
             flexDirection: "row",

@@ -1,7 +1,8 @@
 import React from "react";
 import { Overlay } from "./Overlay";
 import { CalendarItemType } from "./numbers";
-import { Box, Modal } from "@mui/material";
+import { Box, Modal, ThemeProvider, Typography } from "@mui/material";
+import { theme } from "../pages";
 
 export const CalendarItem = ({
   item,
@@ -78,7 +79,11 @@ export const CalendarItem = ({
           pointerEvents,
         }}
       >
-        <h2 style={{ color: "white" }}>{item.number}</h2>
+        <ThemeProvider theme={theme}>
+          <Typography variant="h4" color="white">
+            {item.number}
+          </Typography>
+        </ThemeProvider>
       </div>
 
       <Modal
@@ -101,7 +106,7 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "90%",
+  width: "80%",
   maxWidth: 800,
   bgcolor: "gray",
   border: "2px solid #000",
