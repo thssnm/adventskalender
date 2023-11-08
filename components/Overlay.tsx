@@ -27,6 +27,7 @@ export const Overlay = ({
         }}
       >
         <h2 style={{ color: "white" }}>{item.number}</h2>
+        <h2 style={{ color: "white" }}>{item.userName}</h2>
         <CloseIcon
           onClick={() => setVisible(false)}
           style={{

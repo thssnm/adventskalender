@@ -6,13 +6,15 @@ type BrewAdvices =
       ratio?: string | undefined;
       time?: string | undefined;
       notes?: string | undefined;
+      recipe?: string[] | undefined;
     }
   | undefined;
 
 type AdditionalInfos =
   | {
-      roastery?: string | undefined;
       name?: string | undefined;
+      roastery?: string | undefined;
+      producer?: string | undefined;
       city?: string | undefined;
       taste?: string | undefined;
       roast?: string | undefined;
@@ -21,6 +23,7 @@ type AdditionalInfos =
       processing?: string | undefined;
       recommendation?: string | undefined;
       url?: string | undefined;
+      notes?: string | undefined;
     }
   | undefined;
 
@@ -47,7 +50,45 @@ export const numbers: Numbers = [
   { number: "9", title: "title", userName: "" },
   { number: "17", title: "title", userName: "" },
   { number: "8", title: "title", userName: "" },
-  { number: "6", title: "title", userName: "" },
+
+  {
+    number: "6",
+    title: "",
+    userName: "Eric00",
+    brewAdvices: {
+      brewer: "V60 01, Cafec Abaca rot",
+      grinding:
+        "medium, ein wenig feiner als sonst. Ich bin bei 64mm SSP MP Scheiben 500-550 Micron ab Schleifpunkt. Eine Comandante besitze ich aktuell nicht, würde dort aber round about 20 Clicks anpeilen.",
+      temperature: "93-95 Grad",
+      ratio: "18g/300g",
+      time: "2:30 min",
+      notes:
+        "Ich nutze für den Kaffee eine leicht abgewandelte Version des V60 Rezepts von Jonathan Gagne.",
+      recipe: [
+        "0:00: Vertiefung in der Mitte des Kaffeebetts, 60g Bloom, leichter Swirl.",
+        "0:45: langsam auf 180g in Flower-Pattern oder Kreisen aufgießen, leichter Swirl.",
+        "Kurz bevor alles durchgelaufen ist, zwischen 1:20 und 1:35: langsam auf 300g in Flower-Pattern oder Kreisen aufgießen, leichter Swirl.",
+        "Drawdown ca. 2:30 min.",
+      ],
+    },
+    additionalInfos: {
+      name: "Yambamine",
+      producer: "Diana Velez",
+      roastery: "S U M O",
+      city: "Dublin, Ireland",
+      taste:
+        "Rote reife Früchte, Cantaloupe, Brombeere, Rum, Vanille, roter Apfel. Super süß, saftig mit prickelnder Säure. (DeepL)",
+      roast: "",
+      variety: "Sidra",
+      region: "Sozoranga , Loja, Ecuador",
+      processing: "Red Double Anaerobic Washed",
+      recommendation: "",
+      url: "https://www.sumocoffeeroasters.com/product-page/yambamine-ecuador-1",
+      notes:
+        "Für meinen Geschmack der beste Kaffee, den ich dieses Jahr getrunken habe, von einem wirklich tollen Röster – aus diesem Grund meiner Meinung nach ein würdiger Kaffee für ein besonderes Türchen des Adventskalenders. :) \n\nAls Sidra eine außergewöhnliche Varietät, komplex aufbereitet. Meiner Meinung nach ein exzellentes Beispiel für einen anaerob gewaschen aufbereiteten Kaffee, der zwar vergleichsweise lange fermentiert ist, jedoch keinesfalls ins überfermentierte abrutscht. \n\nSumo ist ein Röster, der mit funky aufbereiteten Bohnen sehr gut umgehen kann und diese fantastisch röstet. \n\nDa stark aufbereitete Bohnen schneller Farbe annehmen, sehen die Bohnen deutlich dunkler aus, als sie geschmacklich in der Tasse sind. \n\nGeschmacklich für mich ein sehr süß-beeriger Kaffee mit einer tollen Säure und insgesamt sehr komplexem Charakter. Ein großartiges Beispiel für einen außergewöhnlichen, superleckeren Kaffee aus Ecuador.",
+    },
+  },
+
   { number: "18", title: "title", userName: "" },
   {
     number: "2",
@@ -107,10 +148,12 @@ export const numbers: Numbers = [
       temperature: "",
       ratio: "",
       time: "",
+      recipe: [""],
     },
     additionalInfos: {
       roastery: "",
       name: "",
+      producer: "",
       city: "",
       taste: "",
       roast: "",
@@ -119,6 +162,7 @@ export const numbers: Numbers = [
       processing: "",
       recommendation: "",
       url: "",
+      notes: "",
     },
   }, 
   
