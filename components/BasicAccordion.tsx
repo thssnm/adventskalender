@@ -72,7 +72,7 @@ export default function BasicAccordion({
             {item?.brewAdvices?.recipe ? (
               <div>
                 <Typography style={{ fontWeight: "bold" }} variant={body1}>
-                  {item.brewAdvices?.notes ? "Rezept: " : null}
+                  {item.brewAdvices?.recipe ? "Rezept: " : null}
                 </Typography>
 
                 {item.brewAdvices.recipe.map((item) => {
@@ -121,6 +121,10 @@ export default function BasicAccordion({
               text={item.additionalInfos?.producer}
             />
             <TextWithBoldStart
+              title="Farm: "
+              text={item.additionalInfos?.farm}
+            />
+            <TextWithBoldStart
               title="Rösterei: "
               text={item.additionalInfos?.roastery}
             />
@@ -153,6 +157,10 @@ export default function BasicAccordion({
               title="Empfohlen für: "
               text={item.additionalInfos?.recommendation}
             />
+            <TextWithBoldStart
+              title="Cup Score: "
+              text={item.additionalInfos?.cupScore}
+            />
             {item.additionalInfos?.url ? (
               <Typography variant="body1">
                 <a
@@ -169,9 +177,11 @@ export default function BasicAccordion({
                 </a>
               </Typography>
             ) : null}
-            <TextWithBoldStart title="Anmerkungen: ">
-              <Markdown>{item.additionalInfos?.notes}</Markdown>
-            </TextWithBoldStart>
+            {item.additionalInfos?.notes ? (
+              <TextWithBoldStart title="Anmerkungen: ">
+                <Markdown>{item.additionalInfos?.notes}</Markdown>
+              </TextWithBoldStart>
+            ) : null}
           </ThemeProvider>
         </AccordionDetails>
       </Accordion>

@@ -15,6 +15,7 @@ type AdditionalInfos =
       name?: string | undefined;
       roastery?: string | undefined;
       producer?: string | undefined;
+      farm?: string | undefined;
       city?: string | undefined;
       taste?: string | undefined;
       roast?: string | undefined;
@@ -22,6 +23,7 @@ type AdditionalInfos =
       region?: string | undefined;
       processing?: string | undefined;
       recommendation?: string | undefined;
+      cupScore?: string | undefined;
       url?: string | undefined;
       notes?: string | undefined;
     }
@@ -167,7 +169,7 @@ export const numbers: Numbers = [
     title: "title",
     userName: "",
   },
-];
+]; /*
 
 /*   
 
@@ -186,6 +188,7 @@ export const numbers: Numbers = [
     additionalInfos: {
       roastery: "",
       name: "",
+      farm: ""
       producer: "",
       city: "",
       taste: "",
@@ -198,5 +201,83 @@ export const numbers: Numbers = [
       notes: "",
     },
   }, 
+  
+  */
+
+/*
+ 
+
+
+
+
+//schweiz Christiantar
+
+/*     {
+    number: "",
+    title: "",
+    userName: "Christiantar",
+    brewAdvices: {
+      brewer: "V60",
+      grinding: "24 Clicks auf der Commandante",
+      temperature: "93 Grad",
+      ratio: "18g/300g",
+      time: "2:30 - 2:45",
+      recipe: [
+        "0:00: Bloom mit 36g Wasser",
+        "0:45: Add 124g Wasser ( -> 160g total)",
+        "1:30: Add 140g Wasser ( -> 300g total)",
+        "Ziel-Brühzeit 2:30 - 2:45",
+      ],
+    },
+    additionalInfos: {
+      roastery: "Roasticious",
+      name: "La Senda Vibrante",
+      farm: "Finca La Senda",
+      producer: "Arnoldo Pérez Melendez and Maria Eugenia Escobar",
+      city: "",
+      taste: "Tropische Früchte, Ananas, Melasse, leicht weinig (DeepL) ",
+      roast: "",
+      variety: "Caturra",
+      region: "Acatenango, Guatemala",
+      processing: "Carbonic maceration",
+      recommendation: "",
+      cupScore: "88+",
+      url: "https://roasticious.com",
+      notes: "",
+    },
+  }, 
+  {
+    number: "",
+    title: "",
+    userName: "Christiantar",
+    brewAdvices: {
+      brewer: "V60",
+      grinding: "24 Clicks auf der Commandante",
+      temperature: "93 Grad",
+      ratio: "18g/300g",
+      time: "2:30 - 2:45",
+      recipe: [
+        "0:00: Bloom mit 36g Wasser",
+        "0:45: Add 124g Wasser ( -> 160g total)",
+        "1:30: Add 140g Wasser ( -> 300g total)",
+        "Ziel-Brühzeit 2:30 - 2:45",
+      ],
+    },
+    additionalInfos: {
+      roastery: "",
+      name: "Sholi Women",
+      farm: "Kundwa Women Coffee smallholder farmers",
+      producer: "Abateraninkunga Ba Sholi Co-operative",
+      city: "",
+      taste: "Holunderblüte, Zitrusfrüchte, leichtes Karamell (DeepL)",
+      roast: "",
+      variety: "Bourbon",
+      region: "Cyeza, Mughanga district, Rwanda",
+      processing: "Washed",
+      recommendation: "",
+      url: "https://roasticious.com",
+      notes: "",
+    },
+  },
   
   */
