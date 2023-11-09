@@ -84,8 +84,10 @@ export const numbers: Numbers = [
       processing: "Red Double Anaerobic Washed",
       recommendation: "",
       url: "https://www.sumocoffeeroasters.com/product-page/yambamine-ecuador-1",
-      notes:
-        "Für meinen Geschmack der beste Kaffee, den ich dieses Jahr getrunken habe, von einem wirklich tollen Röster – aus diesem Grund meiner Meinung nach ein würdiger Kaffee für ein besonderes Türchen des Adventskalenders. :) \n\nAls Sidra eine außergewöhnliche Varietät, komplex aufbereitet. Meiner Meinung nach ein exzellentes Beispiel für einen anaerob gewaschen aufbereiteten Kaffee, der zwar vergleichsweise lange fermentiert ist, jedoch keinesfalls ins überfermentierte abrutscht. \n\nSumo ist ein Röster, der mit funky aufbereiteten Bohnen sehr gut umgehen kann und diese fantastisch röstet. \n\nDa stark aufbereitete Bohnen schneller Farbe annehmen, sehen die Bohnen deutlich dunkler aus, als sie geschmacklich in der Tasse sind. \n\nGeschmacklich für mich ein sehr süß-beeriger Kaffee mit einer tollen Säure und insgesamt sehr komplexem Charakter. Ein großartiges Beispiel für einen außergewöhnlichen, superleckeren Kaffee aus Ecuador.",
+      notes: `Für meinen Geschmack der beste Kaffee, den ich dieses Jahr getrunken habe, von einem wirklich tollen Röster – aus diesem Grund meiner Meinung nach ein würdiger Kaffee für ein besonderes Türchen des Adventskalenders. :)  
+      Als Sidra eine außergewöhnliche Varietät, komplex aufbereitet. Meiner Meinung nach ein exzellentes Beispiel für einen anaerob gewaschen aufbereiteten Kaffee, der zwar vergleichsweise lange fermentiert ist, jedoch keinesfalls ins überfermentierte abrutscht.  
+      Sumo ist ein Röster, der mit funky aufbereiteten Bohnen sehr gut umgehen kann und diese fantastisch röstet. \nDa stark aufbereitete Bohnen schneller Farbe annehmen, sehen die Bohnen deutlich dunkler aus, als sie geschmacklich in der Tasse sind. 
+      Geschmacklich für mich ein sehr süß-beeriger Kaffee mit einer tollen Säure und insgesamt sehr komplexem Charakter. Ein großartiges Beispiel für einen außergewöhnlichen, superleckeren Kaffee aus Ecuador.`,
     },
   },
 
@@ -121,7 +123,38 @@ export const numbers: Numbers = [
   { number: "5", title: "title", userName: "" },
   { number: "20", title: "title", userName: "" },
   { number: "3", title: "title", userName: "" },
-  { number: "24", title: "title", userName: "" },
+
+  {
+    number: "24",
+    title: "",
+    userName: "SebiEspresso",
+    brewAdvices: {
+      brewer: "",
+      grinding: "",
+      temperature: "",
+      ratio: "",
+      time: "",
+      recipe: [""],
+    },
+    additionalInfos: {
+      roastery: "DAK Coffee Roasters",
+      name: "Grenadine Vol. II",
+      producer: "Nestor Lasso",
+      city: "Amsterdam, Niederlande",
+      taste: "Erdbeere, Kirsche, Süß, Rote Früchte, Toffee",
+      roast: "",
+      variety: "Ombligon",
+      region: "Huila, Columbien",
+      processing: "Natural (Aerob und Anaerobe Thermalshock Fermentation)",
+      recommendation: "",
+      url: "https://dakcoffeeroasters.com/shop/coffee/grenadine-volume%20II?quantity=250g&roast=filter",
+      notes: `Hier kommt der Trend 2023 schlechthin: DAK in Kombination mit Nestor Lasso von der Finca El Diviso. Das verspricht hochwertige Bohnen, aufwändig prozessiert :)  
+        Ich habe von der Variätet irgendwann im Verlauf der WBC 2023 gelesen und wieder vergessen, bis vor kurzem DAK mit diesem Kaffee kam. Das klang einfach sehr spannend und ich wollte euch diesen Kaffee mal zeigen.  
+        Wer mehr zum Kaffee lesen möchte findet unter [What is Ombligon coffee & could it become more popular?](#https://perfectdailygrind.com/2023/08/what-is-ombligon-variety-coffee/) eine schöne Lektüre.  
+        Viel Spaß mit dem Kaffee und eine schöne Weihnachtszeit, Sebi`,
+    },
+  },
+
   { number: "19", title: "title", userName: "" },
   { number: "7", title: "title", userName: "" },
   { number: "15", title: "title", userName: "" },

@@ -7,6 +7,7 @@ import { CalendarItemType } from "./numbers";
 import { ThemeProvider, Typography } from "@mui/material";
 import { theme } from "../pages";
 import { TextWithBoldStart } from "./TextWithBoldStart";
+import Markdown from "react-markdown";
 
 export const body1 = "body1";
 
@@ -38,7 +39,7 @@ export default function BasicAccordion({
         >
           <Typography
             variant={body1}
-            color={additionalInfos ? "black" : " white"}
+            color="black"
             style={{ fontWeight: "bold" }}
           >
             Brühempfehlung
@@ -153,22 +154,24 @@ export default function BasicAccordion({
               text={item.additionalInfos?.recommendation}
             />
             {item.additionalInfos?.url ? (
-              <a
-                target="_blank"
-                href={item.additionalInfos?.url}
-                rel="noopener noreferrer"
-                style={{
-                  color: "blue",
-                  textDecoration: "underline",
-                }}
-              >
-                Link
-              </a>
+              <Typography variant="body1">
+                <a
+                  target="_blank"
+                  href={item.additionalInfos?.url}
+                  rel="noopener noreferrer"
+                  style={{
+                    color: "black",
+                    textDecoration: "underline",
+                    fontWeight: "bold",
+                  }}
+                >
+                  Link zur Website
+                </a>
+              </Typography>
             ) : null}
-            <TextWithBoldStart
-              title="Anmerkungen: "
-              text={item.additionalInfos?.notes}
-            />
+            <TextWithBoldStart title="Anmerkungen: ">
+              <Markdown>{item.additionalInfos?.notes}</Markdown>
+            </TextWithBoldStart>
           </ThemeProvider>
         </AccordionDetails>
       </Accordion>

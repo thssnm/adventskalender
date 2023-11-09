@@ -1,8 +1,11 @@
 import React from "react";
 import { Overlay } from "./Overlay";
 import { CalendarItemType } from "./numbers";
-import { Box, Modal, ThemeProvider, Typography } from "@mui/material";
+import { ThemeProvider, Typography } from "@mui/material";
 import { theme } from "../pages";
+import { Box } from "@mui/joy";
+import Modal from "@mui/joy/Modal";
+import ModalClose from "@mui/joy/ModalClose";
 
 export const CalendarItem = ({
   item,
@@ -85,16 +88,10 @@ export const CalendarItem = ({
           </Typography>
         </ThemeProvider>
       </div>
-
-      <Modal
-        open={open}
-        onClose={handleClose}
-        style={{ borderRadius: 12 }}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
+      <Modal open={open} onClose={handleClose}>
         <Box sx={style}>
-          <Overlay item={item} setVisible={handleClose} />
+          <ModalClose color="primary" variant="soft" />
+          <Overlay item={item} devMode={devmode} />
         </Box>
       </Modal>
     </>
@@ -112,7 +109,7 @@ const style = {
   border: "2px solid #000",
   boxShadow: 24,
   p: 4,
-  borderRadius: 6,
+  borderRadius: 12,
   overflowY: "auto",
   maxHeight: "90%",
 };

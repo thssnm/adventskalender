@@ -1,13 +1,13 @@
 import React from "react";
 import { CalendarItemType } from "./numbers";
 import BasicAccordion from "./BasicAccordion";
-import CloseIcon from "@mui/icons-material/Close";
+
 export const Overlay = ({
   item,
-  setVisible,
+  devMode,
 }: {
   item: CalendarItemType;
-  setVisible: (value: boolean) => void;
+  devMode: boolean;
 }) => {
   const time = new Date();
   const hour = time.getHours();
@@ -15,7 +15,9 @@ export const Overlay = ({
   const isOldItem = time.getDate() > Number(item.number);
 
   const additionalInfos =
-    isOldItem || (hour >= 19 && time.getDate() === Number(item.number));
+    devMode ||
+    isOldItem ||
+    (hour >= 19 && time.getDate() === Number(item.number));
 
   return (
     <div>
@@ -28,15 +30,7 @@ export const Overlay = ({
       >
         <h2 style={{ color: "white" }}>{item.number}</h2>
         <h2 style={{ color: "white" }}>{item.userName}</h2>
-        <CloseIcon
-          onClick={() => setVisible(false)}
-          style={{
-            width: "2.5rem",
-            height: "2.5rem",
-            cursor: "pointer",
-            color: "white",
-          }}
-        />
+        <div></div>
       </div>
       <BasicAccordion additionalInfos={additionalInfos} item={item} />
     </div>
