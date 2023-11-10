@@ -84,6 +84,21 @@ export default function BasicAccordion({
                 })}
               </div>
             ) : null}
+            {item?.brewAdvices?.additionalRecipe ? (
+              <div>
+                <Typography style={{ fontWeight: "bold" }} variant={body1}>
+                  {item.brewAdvices?.recipe ? "Rezept: " : null}
+                </Typography>
+
+                {item.brewAdvices.additionalRecipe.map((item) => {
+                  return (
+                    <Typography key={item} variant={body1}>
+                      {"- " + item}
+                    </Typography>
+                  );
+                })}
+              </div>
+            ) : null}
           </ThemeProvider>
         </AccordionDetails>
       </Accordion>

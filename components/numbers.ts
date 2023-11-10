@@ -7,6 +7,7 @@ type BrewAdvices =
       time?: string | undefined;
       notes?: string | undefined;
       recipe?: string[] | undefined;
+      additionalRecipe?: string[] | undefined;
     }
   | undefined;
 
@@ -49,6 +50,7 @@ export const numbers: Numbers = [
     title: "title",
     userName: "Herzlich willkommen zum diesjährigen Adventskalender",
   },
+
   { number: "9", title: "title", userName: "" },
   { number: "17", title: "title", userName: "" },
   { number: "8", title: "title", userName: "" },
@@ -91,6 +93,7 @@ export const numbers: Numbers = [
       Sumo ist ein Röster, der mit funky aufbereiteten Bohnen sehr gut umgehen kann und diese fantastisch röstet. \nDa stark aufbereitete Bohnen schneller Farbe annehmen, sehen die Bohnen deutlich dunkler aus, als sie geschmacklich in der Tasse sind. 
       Geschmacklich für mich ein sehr süß-beeriger Kaffee mit einer tollen Säure und insgesamt sehr komplexem Charakter. Ein großartiges Beispiel für einen außergewöhnlichen, superleckeren Kaffee aus Ecuador.`,
     },
+    //1kg = 187
   },
 
   { number: "18", title: "title", userName: "" },
@@ -136,7 +139,7 @@ export const numbers: Numbers = [
       temperature: "",
       ratio: "",
       time: "",
-      recipe: [""],
+      recipe: [],
     },
     additionalInfos: {
       roastery: "DAK Coffee Roasters",
@@ -155,6 +158,7 @@ export const numbers: Numbers = [
         Wer mehr zum Kaffee lesen möchte findet unter [What is Ombligon coffee & could it become more popular?](#https://perfectdailygrind.com/2023/08/what-is-ombligon-variety-coffee/) eine schöne Lektüre.  
         Viel Spaß mit dem Kaffee und eine schöne Weihnachtszeit, Sebi`,
     },
+    //1kg - 132,50
   },
 
   { number: "19", title: "title", userName: "" },
@@ -245,6 +249,8 @@ export const numbers: Numbers = [
       url: "https://roasticious.com",
       notes: "",
     },
+
+    //1kg - 60
   }, 
   {
     number: "",
@@ -264,7 +270,7 @@ export const numbers: Numbers = [
       ],
     },
     additionalInfos: {
-      roastery: "",
+      roastery: "Roasticious",
       name: "Sholi Women",
       farm: "Kundwa Women Coffee smallholder farmers",
       producer: "Abateraninkunga Ba Sholi Co-operative",
@@ -278,6 +284,89 @@ export const numbers: Numbers = [
       url: "https://roasticious.com",
       notes: "",
     },
+    1kg - 64
+  },
+  
+  */
+
+//_____________________________Inalina
+/*       {
+    number: "",
+    userName: "Inalina",
+    brewAdvices: {
+      brewer: "Hario V60 / Origami",
+      grinding: "Comandante: 18-20 Klicks",
+      temperature: "93 Grad",
+      ratio: "1:16",
+      time: "2:15 - 2:40",
+    },
+    additionalInfos: {
+      roastery: "Seekind",
+      name: "Forest Cósmic",
+      farm: "San Luis",
+      producer: "Omar Arango",
+      taste: "tropische Früchte • Demerara Zucker • Zitrusfrüchte",
+      variety: "Bourbon, Typica, Caturra",
+      region: "Libano Tolima, Kolumbien",
+      processing: "Natural Anearob",
+      recommendation: "Filter, French Press, Aero Press",
+      url: "https://seekind.coffee/shop/forest-cosmic-filter/",
+      notes: `Omar Arango nimmt einen Teil seiner besten Ernte auf der Farm San Luis und platziert sie in einem Fass im Wald.  
+        Ein Schamane führt vor der Schließung des Deckels ein Ritual aus, um den Kaffee zu segnen. Der Kaffee fermentiert nur durch Hilfe natürlicher Hefen des Kolumbianischen Regenwaldes.`,
+    },
+    //1kg - 68
+  },
+  {
+    number: "",
+    title: "",
+    userName: "Inalina",
+    brewAdvices: {
+      brewer: "Graycano, V60, Origami, Kalita, Fellow X, AeroPress",
+      grinding: "Comandante: 22 Klicks",
+      temperature: "93 Grad (Aeropress 88 Grad)",
+      ratio: "15g - 250g (Aeropress 15g - 220g)",
+      time: "2:45 (Aeropress 1:40)",
+      notes:
+        "Das Rezept funktioniert genau so gut mit 18g/300ml; in dem Fall dann in 60ml/120ml Schritten gießen und Mahlgrad etwas gröber (23/24 Klicks)",
+      recipe: [
+        "Graycano, V60, Origami, Kalita, Fellow X:",
+        "Brew Ratio 15g Kaffee - 250g Wasser; Temperatur 93° ; 22 Klicks C40 MK4",
+        "0:00 - 0:10 - 50ml - Swirl",
+        "0:10 - 0:45 - (Bloom)",
+        "0:45 - 1:00 - 100ml",
+        "1:15 - 1:25 - 50ml",
+        "1:45 - 1:55 - 50ml - anschließend Swirl",
+        "2:45 - fertig",
+      ],
+      additionalRecipe: [
+        "AeroPress inverted.",
+        "15g Kaffee; ( 22 Klicks) ; 220ml Wasser; 88°",
+        "0:00 - 0:30 mit 50ml Wasser aufgießen und 5 x langsam umrühren",
+        "0:30 - 1:00 und bis 220ml auffüllen, 5 x umrühren, danach filter drauf und auf Server platzieren",
+        "bei 1:10 Minuten anfangen langsam zu pressen, fertig bei 1:40 Minuten.",
+      ],
+    },
+    additionalInfos: {
+      roastery: "Schön",
+      name: "CHEPSANGOR HILLS",
+      farm: "",
+      producer: "Dr. Rosebella Langat",
+      city: "Burgebrach",
+      taste:
+        "Traube, Pflaume, Cranberry, Steinfrucht Johannisbeere, Cashew Nuss",
+      roast: "hell",
+      variety: "SL-28; SL-34; Ruiru11, Batian",
+      region: "Nandi County, Kenia",
+      processing: "Natural - Anaerob (Sleeping Bag)",
+      recommendation: "",
+      cupScore: "87",
+      url: "https://schoenkaffee.de/products/chepsangor-hills-sleeping-bag-kenia-natural",
+      notes: `Eine kleine Besonderheit in der Aufbereitung hat der Chepsangor Hills zusätzlich zu bieten. Direkt nach der Ernte werden die Kirschen in schwarzen Säcken (Sleeping Bags) für fünf Tage anaerob fermentiert.  
+        Chepsangor Hills liegt in Nandi County bei Westkenia. Die Farm ist im Besitz von Dr. Rosebella Langat und ihrem Mann. Sie bauen selber Kaffee an und arbeiten direkt mit den Kaffeebauern zusammen, um die besten verfügbaren Bohnen zu finden. Sie begannen 2016 mit dem Anbau und brachten den Kaffee zum entpulpen in die Kabsaos Genossenschaft.   
+        Zurzeit ist Chepsangor Hills eines der professionellsten Projekte in der Region. Denn es fördert das nachhaltige Wachstum des Kaffees durch umweltfreundliche und landwirtschaftliche Praktiken. Die Vision von Rosebella ist es, lokalen Gemeinschaften, insbesondere Frauen, dabei zu helfen, eine nachhaltige soziale, ökologische und wirtschaftliche Stärkung zu erreichen.  
+        Sie haben ein Kompost-Projekt für organischen Dünger. Außerdem nutzen sie ein Grünhaus mit mehrlagigen sun drying beds, sodass die Naturals schneller und unabhängig von Regen getrocknet werden können.Der Kaffee wird in 30 kg Säcken aus Jute importiert. Der Sleeping Bag Kaffee wird sogar vakuumverpackt.`,
+    },
+    //1kg - 67,90
   },
   
   */
