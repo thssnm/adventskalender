@@ -369,4 +369,75 @@ export const numbers: Numbers = [
     //1kg - 67,90
   },
   
+
+
+
+
+______________Richard
+
+
+{
+    number: "",
+    title: "",
+    userName: "Richard",
+    brewAdvices: {
+      brewer: "V60",
+      grinding: "",
+      temperature: "95 Grad",
+      ratio: "15g - 250 g",
+      time: "2:20",
+      recipe: [""],
+    },
+    additionalInfos: {
+      roastery: "INDUSTRA.COFFEE",
+      name: "MUNDAYO",
+      farm: "Nensebo, West Arsi"
+      producer: "",
+      city: "Brünn, Tschechien",
+      taste: "",
+      roast: "",
+      variety: "",
+      region: "ETHIOPIA",
+      processing: "washed",
+      recommendation: "",
+      url: "https://industra.coffee/en/product/ethiopia-mundayo-filter/",
+      notes: "",
+    },
+
+    //1kg - 58,43 €
+  }, 
+
+
+  {
+    number: "",
+    title: "",
+    userName: "Richard",
+    brewAdvices: {
+      brewer: "V60",
+      grinding: "",
+      temperature: "95 Grad",
+      ratio: "15g - 250 g",
+      time: "2:20",
+      recipe: [""],
+    },
+    additionalInfos: {
+      roastery: "INDUSTRA.COFFEE",
+      name: "TEJAO",
+      farm: "Sierra Mazateca, Oaxaca"
+      producer: "",
+      city: "Brünn, Tschechien",
+      taste: "",
+      roast: "",
+      variety: "Typica, Bourbon",
+      region: "MEXICO",
+      processing: "washed",
+      recommendation: "",
+      url: "https://industra.coffee/en/product/mexico-tejao-filter/",
+      notes: "",
+    },
+    //1kg - 58,43 €
+  }, 
+
+
+
   */
