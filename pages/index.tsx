@@ -38,15 +38,7 @@ export default function Home() {
         {count > 9 && (
           <p style={{ position: "absolute", top: 0 }}>god mode activated!</p>
         )}
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            marginTop: 24,
-            color: "white",
-          }}
-        >
+        <div className={styles.wrapper}>
           <ThemeProvider theme={theme}>
             <Typography
               onClick={() => setCount(count + 1)}
@@ -58,26 +50,11 @@ export default function Home() {
           </ThemeProvider>
         </div>
         <ThemeProvider theme={theme}>
-          <Typography
-            variant="h3"
-            style={{
-              marginTop: -24,
-              color: "white",
-            }}
-          >
+          <Typography variant="h3" style={style}>
             Adventskalender 2023
           </Typography>
         </ThemeProvider>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr 1fr",
-            gridTemplateRows: "1fr 1fr 1fr 1fr 1fr 1fr",
-            padding: 12,
-            maxWidth: 500,
-            width: "90vw",
-          }}
-        >
+        <div className={styles.grid}>
           {numbers.map((item) => {
             return (
               <CalendarItem
@@ -93,3 +70,8 @@ export default function Home() {
     </div>
   );
 }
+
+const style = {
+  marginTop: -24,
+  color: "white",
+};
