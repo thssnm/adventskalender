@@ -68,18 +68,16 @@ export const CalendarItem = ({
       <div
         onClick={onPressItem}
         style={{
-          minWidth: 50,
-          minHeight: 50,
-          width: "20%",
-          height: "15%",
-          margin: 6,
-          display: "flex",
-          alignItems: "center",
           backgroundColor,
-          justifyContent: "center",
           borderRadius: 12,
           cursor: "pointer",
           pointerEvents,
+          width: "90%",
+          aspectRatio: 1,
+          margin: 6,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
         <ThemeProvider theme={theme}>

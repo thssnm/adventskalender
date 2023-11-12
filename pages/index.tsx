@@ -70,14 +70,12 @@ export default function Home() {
         </ThemeProvider>
         <div
           style={{
-            flexDirection: "row",
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-            maxWidth: 800,
-            minWidth: 370,
-            height: "60%",
-            minHeight: 500,
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr 1fr 1fr",
+            gridTemplateRows: "1fr 1fr 1fr 1fr 1fr 1fr",
+            padding: 12,
+            maxWidth: 500,
+            width: "90vw",
           }}
         >
           {numbers.map((item) => {
