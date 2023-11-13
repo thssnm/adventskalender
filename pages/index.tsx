@@ -4,7 +4,7 @@ import React from "react";
 import { CalendarItem } from "../components/CalendarItem";
 import { numbers } from "../components/numbers";
 import Snowfall from "react-snowfall";
-import Link from "next/link";
+import Link from "@mui/joy/Link";
 
 import {
   ThemeProvider,
@@ -68,7 +68,12 @@ export default function Home() {
             );
           })}
         </div>
-        <Link style={{ marginTop: 100, color: "#ffffffbb" }} href="imprint">
+        <Link
+          underline="always"
+          color="neutral"
+          style={{ marginTop: 100 }}
+          href="imprint"
+        >
           Impressum
         </Link>
       </main>
