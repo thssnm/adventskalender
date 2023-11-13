@@ -4,6 +4,7 @@ import React from "react";
 import { CalendarItem } from "../components/CalendarItem";
 import { numbers } from "../components/numbers";
 import Snowfall from "react-snowfall";
+import Link from "next/link";
 
 import {
   ThemeProvider,
@@ -27,6 +28,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Kaffee Netz Adventskalender</title>
+        <meta name="robots" content="noindex" />
       </Head>
       <main
         className={styles.main}
@@ -66,6 +68,9 @@ export default function Home() {
             );
           })}
         </div>
+        <Link style={{ marginTop: 100, color: "#ffffffbb" }} href="imprint">
+          Impressum
+        </Link>
       </main>
     </div>
   );
