@@ -48,8 +48,9 @@ export const numbersDev: Numbers = [
     userName: "Eric00",
     brewAdvices: {
       brewer: "V60 01, Cafec Abaca rot",
-      grinding:
-        "medium, ein wenig feiner als sonst. Ich bin bei 64mm SSP MP Scheiben 500-550 Micron ab Schleifpunkt. Eine Comandante besitze ich aktuell nicht, würde dort aber round about 20 Clicks anpeilen.",
+      grinding: `medium, ein wenig feiner als sonst. Ich bin bei 64mm SSP MP Scheiben 500-550 Micron ab Schleifpunkt. Eine Comandante besitze ich aktuell nicht, würde dort aber round about 20 Clicks anpeilen.  
+        Kingrinder K6 (70-75 Clicks)  
+        Empfehlung ist eine Mühle mit möglichst viel Klarheit`,
       temperature: "93-95 Grad",
       ratio: "18g/300g",
       time: "2:30 min",
@@ -182,6 +183,7 @@ export const numbersDev: Numbers = [
     },
     additionalInfos: {
       roastery: "Seekind",
+      city: "Ravensburg",
       name: "Forest Cósmic",
       farm: "San Luis",
       producer: "Omar Arango",
@@ -302,7 +304,7 @@ export const numbersDev: Numbers = [
     number: "9",
     userName: "Konstantinos",
     additionalInfos: {
-      roastery: "Cøffe",
+      roastery: "Das CØFFE",
       name: "Colombia",
       producer: "Wilson Ordonez",
       city: "Düsseldorf",
@@ -313,6 +315,8 @@ export const numbersDev: Numbers = [
       height: "1850m",
       processing: "washed",
       url: "https://dascoffe.store/products/colombia-250g?variant=46840961401177",
+      notes: `Das CØFFE röstet zwar nicht erst seit gestern, haben aber seit diesem Jahr deutlich mehr Varietät ins Haus gebracht.  
+        Durch die guten Beziehungen konnten die Betreiben viele Kaffees aus Kolumbien sourcen und starten langsam so richtig durch. Den Kaffee habe ich persönlich noch nicht getestet, hoffe aber, dass er euch geschmeckt hat!`,
     },
     //1kg -  48,90 €
   },
@@ -322,27 +326,85 @@ export const numbersDev: Numbers = [
     userName: "Konstantinos",
     additionalInfos: {
       roastery: "Rösterei VIER",
+      name: "Frutos Rojos",
       farm: "El Paraiso",
       producer: "Diego Samuel Bermudez",
       city: "Düsseldorf",
-      taste: "Pfirsich - Joghurt - Erdbeere",
+      taste: "Pfirsich, Erdbeere, Jogurt",
+      roast: "Omni",
       variety: "Castillo",
       height: "1950m",
       region: "Cauca / Piendamo, Kolumbien",
       microlot: "Frutos Rojos",
-      processing: "washed & anaerobic",
+      processing: "Washed Anaerobic",
       recommendation: "Siebträger, Filter, French Press, Aeropress",
       url: "https://roesterei-vier.de/diegobermudezfrutosrojos",
+      notes: `Das Benchmark-Lot von Diego Bermudez geröstet von Rösterei Vier in Düsseldorf.  
+        Kein anderes Lot von Ihm ist so sauber und zeigt die weiteren Potenziale von Fermentation und Kaffee.`,
     },
     //1kg - 50,90 €
+  },
+
+  //___________Dirk_H
+  {
+    number: "11",
+    userName: "Dirk_H",
+    brewAdvices: {
+      brewer: "",
+      grinding: "",
+      temperature: "",
+      ratio: "",
+      time: "",
+      recipe: [],
+    },
+    additionalInfos: {
+      roastery: "Leuchtfeuer",
+      name: "No.2",
+      producer: "Don Eli - Carlos Montero",
+      city: "Wedel",
+      taste: "Passionsfrucht, süße Mangostane und ein Coca Cola Finish",
+      roast: "Light",
+      variety: "Catuai",
+      region: "Tarrazú | La Pastora, Costa Rica",
+      height: "1900m | 2000m",
+      processing: "Natural Anaerobic, 5 tage tank fermented, slow dried",
+      cupScore: "88",
+      url: "https://www.leuchtfeuer.coffee/products/specialty-coffee-filterkaffee-costa-rica-no2",
+      notes: "Experimental Lot, Ernte 2022",
+    },
+    //1kg -  70€
+  },
+  {
+    number: "12",
+    userName: "Dirk_H",
+    brewAdvices: {
+      brewer: "",
+      grinding: "",
+      temperature: "",
+      ratio: "",
+      time: "",
+      recipe: [],
+    },
+    additionalInfos: {
+      roastery: "Elbgold",
+      name: "La Pachuca",
+      producer: "Roberto Mata Naranjo",
+      city: "Hamburg",
+      taste: "Rote Grütze, Weisse Melisse, Kandis",
+      variety: "Caturra Amarillo",
+      region: " Tarrazú | Valle de Dota, Costa Rica",
+      processing: "Juicy Honey Fermentation",
+      url: "https://www.elbgoldshop.com/products/filterkaffee-la-pachuca-juicy-honey-fermentation-0250g",
+      notes:
+        " Juicy Honey Fermentation: Dafür werden die Kirschen geschält und in ihrer eigenen Mucilage plus dem Fruchtfleisch eines weiteren Lots 120 Stunden fermentiert.",
+    },
+    //1kg -  71,60€
   },
   { number: "19", userName: "" },
   { number: "15", userName: "" },
   { number: "16", userName: "" },
   { number: "22", userName: "" },
-  { number: "11", userName: "" },
   { number: "14", userName: "" },
-  { number: "12", userName: "" },
   { number: "17", userName: "" },
   { number: "18", userName: "" },
   { number: "23", userName: "" },
