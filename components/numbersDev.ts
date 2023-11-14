@@ -41,73 +41,8 @@ export type CalendarItemType = {
 
 export type Numbers = CalendarItemType[];
 
-export const numbers: Numbers = [
-  { number: "10", userName: "" },
-  { number: "12", userName: "" },
-  { number: "1", userName: "" },
-  { number: "9", userName: "" },
-  { number: "17", userName: "" },
-  { number: "8", userName: "" },
-  { number: "6", userName: "" },
-  { number: "18", userName: "" },
-  { number: "2", userName: "" },
-  { number: "23", userName: "" },
-  { number: "13", userName: "" },
-  { number: "21", userName: "" },
-  { number: "5", userName: "" },
-  { number: "20", userName: "" },
-  { number: "3", userName: "" },
-  { number: "24", userName: "" },
-  { number: "19", userName: "" },
-  { number: "7", userName: "" },
-  { number: "15", userName: "" },
-  { number: "4", userName: "" },
-  { number: "16", userName: "" },
-  { number: "22", userName: "" },
-  { number: "11", userName: "" },
-  { number: "14", userName: "" },
-]; /*
-
-/*   
-
-    {
-    number: "",
-    
-    userName: "",
-    brewAdvices: {
-      brewer: "",
-      grinding: "",
-      temperature: "",
-      ratio: "",
-      time: "",
-      recipe: [""],
-    },
-    additionalInfos: {
-      roastery: "",
-      name: "",
-      farm: ""
-      producer: "",
-      city: "",
-      taste: "",
-      roast: "",
-      variety: "",
-      region: "",
-      height: "",
-      processing: "",
-      recommendation: "",
-      url: "",
-      notes: "",
-    },
-    //1kg -  €
-  }, 
-  
-  */
-
-/*
- 
-
-//______________Eric00
-
+export const numbersDev: Numbers = [
+  //______________Christiantar
   {
     number: "1", //number is fix 6
     userName: "Eric00",
@@ -170,7 +105,6 @@ export const numbers: Numbers = [
     //1kg - 132,50
   },
 
-
   //______________Christiantar
   {
     number: "3",
@@ -202,7 +136,7 @@ export const numbers: Numbers = [
       url: "https://roasticious.com",
     },
 
-    //1kg - 60 
+    //1kg - 60
   },
   {
     number: "4",
@@ -402,9 +336,53 @@ export const numbers: Numbers = [
     },
     //1kg - 50,90 €
   },
+  { number: "19", userName: "" },
+  { number: "15", userName: "" },
+  { number: "16", userName: "" },
+  { number: "22", userName: "" },
+  { number: "11", userName: "" },
+  { number: "14", userName: "" },
+  { number: "12", userName: "" },
+  { number: "17", userName: "" },
+  { number: "18", userName: "" },
+  { number: "23", userName: "" },
+  { number: "13", userName: "" },
+  { number: "21", userName: "" },
+  { number: "20", userName: "" },
+  { number: "24", userName: "" },
+];
 
+/*   
 
-
-
-  ________________Philipp82
+    {
+    number: "",
+    
+    userName: "",
+    brewAdvices: {
+      brewer: "",
+      grinding: "",
+      temperature: "",
+      ratio: "",
+      time: "",
+      recipe: [],
+    },
+    additionalInfos: {
+      roastery: "",
+      name: "",
+      farm: ""
+      producer: "",
+      city: "",
+      taste: "",
+      roast: "",
+      variety: "",
+      region: "",
+      height: "",
+      processing: "",
+      recommendation: "",
+      url: "",
+      notes: "",
+    },
+    //1kg -  €
+  }, 
+  
   */

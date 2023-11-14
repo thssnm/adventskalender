@@ -3,6 +3,7 @@ import styles from "../styles/Home.module.css";
 import React from "react";
 import { CalendarItem } from "../components/CalendarItem";
 import { numbers } from "../components/numbers";
+import { numbersDev } from "../components/numbersDev";
 import Snowfall from "react-snowfall";
 import Link from "@mui/joy/Link";
 
@@ -21,6 +22,9 @@ export default function Home() {
 
   // ---- toggle bevor pushing -----
   const devmode = false;
+  // ---- toggle bevor pushing -----
+
+  const items = devmode ? numbersDev : numbers;
 
   const showSnow = new Date().getMonth() === 11 || devmode;
 
@@ -57,7 +61,7 @@ export default function Home() {
           </Typography>
         </ThemeProvider>
         <div className={styles.grid}>
-          {numbers.map((item) => {
+          {items.map((item) => {
             return (
               <CalendarItem
                 key={item.number}
@@ -70,7 +74,7 @@ export default function Home() {
         </div>
         <Link
           underline="always"
-          color="neutral"
+          color="primary"
           style={{ marginTop: 100 }}
           href="imprint"
         >

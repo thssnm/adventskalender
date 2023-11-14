@@ -28,6 +28,7 @@ export default function BasicAccordion({
   return (
     <div>
       <Accordion
+        disabled={!item.brewAdvices}
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
         style={{ borderRadius: 12, marginBottom: 12 }}
@@ -42,7 +43,7 @@ export default function BasicAccordion({
             color="black"
             style={{ fontWeight: "bold" }}
           >
-            Brühempfehlung
+            {item.brewAdvices ? "Brühempfehlung" : "keine Brühempfehlung"}
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -69,7 +70,7 @@ export default function BasicAccordion({
               title="Anmerkungen: "
               text={item.brewAdvices?.notes}
             />
-            {item?.brewAdvices?.recipe ? (
+            {item?.brewAdvices?.recipe?.length ? (
               <div>
                 <Typography style={{ fontWeight: "bold" }} variant={body1}>
                   {item.brewAdvices?.recipe ? "Rezept: " : null}
@@ -84,7 +85,7 @@ export default function BasicAccordion({
                 })}
               </div>
             ) : null}
-            {item?.brewAdvices?.additionalRecipe ? (
+            {item?.brewAdvices?.additionalRecipe?.length ? (
               <div>
                 <Typography style={{ fontWeight: "bold" }} variant={body1}>
                   {item.brewAdvices?.recipe ? "Rezept: " : null}
@@ -167,6 +168,14 @@ export default function BasicAccordion({
             <TextWithBoldStart
               title="Aufbereitung: "
               text={item.additionalInfos?.processing}
+            />
+            <TextWithBoldStart
+              title="Anbauhöhe: "
+              text={item.additionalInfos?.height}
+            />
+            <TextWithBoldStart
+              title="Mikrolot: "
+              text={item.additionalInfos?.microlot}
             />
             <TextWithBoldStart
               title="Empfohlen für: "
