@@ -400,15 +400,80 @@ export const numbersDev: Numbers = [
     },
     //1kg -  71,60€
   },
-  { number: "19", userName: "" },
+
+  //____________Saxaddict
+
+  {
+    number: "13",
+    userName: "Saxaddict",
+    brewAdvices: {
+      brewer: "",
+      grinding: "",
+      temperature: "",
+      ratio: "",
+      time: "",
+      recipe: [],
+    },
+    additionalInfos: {
+      roastery: "Mokxa",
+      name: "RIVENSE",
+      producer: "Isabel Rojas und dessen Familie",
+      city: "Strasbourg, France",
+      taste:
+        "Un café complexe et suave, sur des notes d'ananas confit, muscat et zestes d'agrumes",
+      roast: "Omni",
+      variety: "Caturra",
+      region: "Chirrippo, Costa Rica",
+      height: "2000m",
+      processing: "Anaerobe Fermentation",
+      recommendation: "Siebträger, Frechpress, Bialetti, Chemex, Aeropress",
+      cupScore: "87",
+      url: "https://www.cafemokxa.com/nos-cafes/459-5240-costa-rica-rivense.html#/25-conditionnement-250grs/29-mouture-grains",
+      notes: `Das Ehepaar Isabel Rojas und Regulo Ureña, das in einem Gebiet mit hoher Biodiversität lebt, nimmt seine Verantwortung für die Umwelt sehr ernst. Sie haben ihre Farm Café Rivense auf kreative Weise aufgebaut und wenden nachhaltige Methoden an, die von der Beschattung der Kaffeebäume bis hin zur Bodenanalyse reichen, um den Wasserverbrauch und den Einsatz von Betriebsmitteln zu minimieren.  
+Ihre Söhne haben sich dem Abenteuer angeschlossen, und jeder bringt nun seine eigenen Fähigkeiten ein, so dass sie jeden Schritt der Verarbeitung der Bohnen akribisch verfolgen können!`,
+    },
+    //1kg -  60€
+  },
+  {
+    number: "14",
+    userName: "Saxaddict",
+    brewAdvices: {
+      brewer: "",
+      grinding: "",
+      temperature: "",
+      ratio: "",
+      time: "",
+      recipe: [],
+    },
+    additionalInfos: {
+      roastery: "Mokxa",
+      name: "EL NIÑO",
+      producer: "Jairon Hernan Moreno Ruiz",
+      city: "Strasbourg, France",
+      taste:
+        "Un café juteux aux notes fruitées de prune et myrtille exprimant une belle acidité sur le fruit de la passion",
+      roast: "Hell",
+      variety: "Parainema",
+      region: "La Leona, Santa Barbara, Honduras",
+      height: "1500m",
+      processing: "Gewaschen",
+      recommendation: "V60, Chemex, Aeropress, Frechpress",
+      cupScore: "87",
+      url: "https://www.cafemokxa.com/nos-cafes/466-5403-honduras-el-nino.html#/25-conditionnement-250grs/29-mouture-grains",
+      notes: `Jairon Moreno stammt aus einer Familie von Kaffeebauern.  
+Nachdem er sieben Jahre lang beharrlich Kaffeebäume in einer Umgebung angebaut hatte, in der die Temperaturen zu kalt waren, verkaufte und kaufte er eine verlassene Plantage auf dem Gebiet von Santa Barbara, das von einem milderen Klima profitierte.  
+Jairo arbeitete weiterhin hart daran, den alten Kaffeebäumen neues Leben einzuhauchen und pflanzte neue Sorten mit einer Parzelle mit Parainema und Pacamara.  
+Seine Bemühungen haben sich gelohnt, da wir heute einen seiner Kaffees probieren.`,
+    },
+    //1kg -  48€
+  },
   { number: "15", userName: "" },
+  { number: "19", userName: "" },
   { number: "16", userName: "" },
   { number: "22", userName: "" },
-  { number: "14", userName: "" },
   { number: "17", userName: "" },
   { number: "18", userName: "" },
   { number: "23", userName: "" },
-  { number: "13", userName: "" },
   { number: "21", userName: "" },
   { number: "20", userName: "" },
   { number: "24", userName: "" },
