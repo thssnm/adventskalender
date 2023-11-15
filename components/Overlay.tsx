@@ -19,10 +19,6 @@ export const Overlay = ({
     isOldItem ||
     (hour >= 19 && time.getDate() === Number(item.number));
 
-  const blurrStyle = !additionalInfos
-    ? { filter: "blur(10px)", pointerEvents: "none", color: "white" }
-    : { color: "white" };
-
   return (
     <div>
       <div
@@ -33,7 +29,15 @@ export const Overlay = ({
         }}
       >
         <h2 style={{ color: "white" }}>{item.number}</h2>
-        <h2 style={blurrStyle}>{item.userName}</h2>
+        <h2
+          style={
+            !additionalInfos
+              ? { filter: "blur(10px)", pointerEvents: "none", color: "white" }
+              : { color: "white" }
+          }
+        >
+          {item.userName}
+        </h2>
         <div></div>
       </div>
       <BasicAccordion additionalInfos={additionalInfos} item={item} />
