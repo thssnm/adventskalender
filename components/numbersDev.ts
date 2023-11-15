@@ -467,15 +467,162 @@ Seine Bemühungen haben sich gelohnt, da wir heute einen seiner Kaffees probiere
     },
     //1kg -  48€
   },
-  { number: "15", userName: "" },
-  { number: "19", userName: "" },
-  { number: "16", userName: "" },
-  { number: "22", userName: "" },
-  { number: "17", userName: "" },
-  { number: "18", userName: "" },
-  { number: "23", userName: "" },
+
+  //________________Philipp82
+  {
+    number: "15",
+    userName: "Philipp82",
+    additionalInfos: {
+      roastery: "The Barn",
+      name: "SHANTAWENE",
+      farm: "Daye Bensa",
+      city: "Berlin",
+      taste: "Passionsfrucht, Erdbeere und Banane",
+      roast: "Filter",
+      variety: "Heirloom",
+      region: "Sidama, Äthiopien",
+      height: "1900m - 2300m",
+      processing: "Anaerob",
+      url: "https://de.thebarn.de/de/products/shantawene",
+    },
+    //1kg -  72€
+  },
+  {
+    number: "16",
+    userName: "Philipp82",
+    additionalInfos: {
+      roastery: "Father's Coffee Roastery",
+      name: "Keramo Natural",
+      farm: "Daye Bensa",
+      city: "Ostrava, Tschechien",
+      taste: "Blaubeere, Käsekuchen, Muscovado-Zucker",
+      variety: "Heirloom (indigenous varieties)",
+      region: "Keramo Village, Sidama, Äthiopien",
+      height: "2300m",
+      processing: "Natural",
+      url: "https://fathers.cz/product/keramo-f/?lang=en",
+    },
+    //1kg -  64,40€
+  },
+
+  //______________thssnm
+  {
+    number: "17",
+    userName: "thssnm",
+    brewAdvices: {
+      brewer: "V60 - Aeropress",
+      temperature: "94 Grad",
+      ratio: "19g/360g",
+      time: "2:45",
+      notes:
+        "Ich kenne diesen Kaffee noch nicht deswegen ist das die Brühempfehlung des Rösters",
+    },
+    additionalInfos: {
+      roastery: "backyard coffee",
+      name: "LA LUIS",
+      producer: "Juan Pablos Velez",
+      city: "Frankfurt",
+      taste: "Lychee, Honig, Rote Früchte",
+      region: "Kolumbien",
+      processing: "honey fermentation",
+      recommendation: "V60 - Aeropress - Frenchpress (etwas gröber mahlen)",
+      url: "https://www.backyard-coffee.com/La-Luis-250g-Filterkaffee-aus-Kolumbien/CD.LALUI0250",
+      notes:
+        "Für mich ein neuer Kaffee aber die Rösterei ist mir gut bekannt. Ich bestelle dort hin und wieder Filterkaffee sowie Espresso.",
+    },
+    //1kg -  72€
+  },
+  {
+    number: "18",
+
+    userName: "thssnm",
+    brewAdvices: {
+      brewer: "",
+      grinding: "",
+      temperature: "",
+      ratio: "",
+      time: "",
+      recipe: [],
+    },
+    additionalInfos: {
+      roastery: "",
+      name: "",
+      farm: "",
+      producer: "",
+      city: "",
+      taste: "",
+      roast: "",
+      variety: "",
+      region: "",
+      height: "",
+      processing: "",
+      recommendation: "",
+      url: "",
+      notes: "",
+    },
+    //1kg -  €
+  },
+
+  //___________majoj
+
+  {
+    number: "19",
+
+    userName: "majoj",
+    brewAdvices: {
+      brewer: "",
+      grinding: "",
+      temperature: "",
+      ratio: "",
+      time: "",
+      recipe: [],
+    },
+    additionalInfos: {
+      roastery: "ERNST KAFFERÖSTER",
+      name: "ETHIOPIA SHANTAWENE FILTER",
+      farm: "Shantawene / Daye Bensa",
+      city: "Köln",
+      taste: "Wilde Beere, Pfirsich, Bergamotte",
+      roast: "Filter",
+      variety: "mixed heirloom",
+      region: "Sidama Zone, Äthiopien",
+      height: "1990m - 2190m",
+      processing: "natural",
+      url: "https://www.ernst-kaffee.de/products/ethiopia-shantawene-filter",
+    },
+    //1kg -  50€
+  },
+  {
+    number: "20",
+
+    userName: "majoj",
+    brewAdvices: {
+      brewer: "",
+      grinding: "",
+      temperature: "",
+      ratio: "",
+      time: "",
+      recipe: [],
+    },
+    additionalInfos: {
+      roastery: "ERNST KAFFERÖSTER",
+      name: "COSTA RICA JUANACHUTE FILTER",
+      farm: "Juanachute - Santa Maria de Dota",
+      producer: "Luis Anastasio Castro",
+      city: "Köln",
+      taste: "Brombeere, Blaubeere, Oolong",
+      roast: "Filter",
+      variety: "Caturra, Catuai",
+      region: "Tarrazú, Costa Rica",
+      height: "1800m",
+      processing: "red honey",
+      url: "https://www.ernst-kaffee.de/products/manos-juntas-filter-2",
+    },
+    //1kg -  60€
+  },
   { number: "21", userName: "" },
-  { number: "20", userName: "" },
+  { number: "22", userName: "" },
+  { number: "23", userName: "" },
   { number: "24", userName: "" },
 ];
 
@@ -496,7 +643,7 @@ Seine Bemühungen haben sich gelohnt, da wir heute einen seiner Kaffees probiere
     additionalInfos: {
       roastery: "",
       name: "",
-      farm: ""
+      farm: "",
       producer: "",
       city: "",
       taste: "",

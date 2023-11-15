@@ -27,82 +27,83 @@ export default function BasicAccordion({
 
   return (
     <div>
-      <Accordion
-        disabled={!item.brewAdvices}
-        expanded={expanded === "panel1"}
-        onChange={handleChange("panel1")}
-        style={{ borderRadius: 12, marginBottom: 12 }}
-      >
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
+      {item.brewAdvices ? (
+        <Accordion
+          expanded={expanded === "panel1"}
+          onChange={handleChange("panel1")}
+          style={{ borderRadius: 12, marginBottom: 12 }}
         >
-          <Typography
-            variant={body1}
-            color="black"
-            style={{ fontWeight: "bold" }}
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
           >
-            {item.brewAdvices ? "Brühempfehlung" : "keine Brühempfehlung"}
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <ThemeProvider theme={theme}>
-            <TextWithBoldStart
-              title="Filter: "
-              text={item?.brewAdvices?.brewer}
-            />
-            <TextWithBoldStart
-              title="Mahlgrad: "
-              text={item?.brewAdvices?.grinding}
-            />
-            <TextWithBoldStart
-              title="Temperatur: "
-              text={item.brewAdvices?.temperature}
-            />
-            <TextWithBoldStart
-              title="Verhältnis: "
-              text={item.brewAdvices?.ratio}
-            />
-            <TextWithBoldStart title="Zeit: " text={item.brewAdvices?.time} />
+            <Typography
+              variant={body1}
+              color="black"
+              style={{ fontWeight: "bold" }}
+            >
+              Brühempfehlung
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <ThemeProvider theme={theme}>
+              <TextWithBoldStart
+                title="Filter: "
+                text={item?.brewAdvices?.brewer}
+              />
+              <TextWithBoldStart
+                title="Mahlgrad: "
+                text={item?.brewAdvices?.grinding}
+              />
+              <TextWithBoldStart
+                title="Temperatur: "
+                text={item.brewAdvices?.temperature}
+              />
+              <TextWithBoldStart
+                title="Verhältnis: "
+                text={item.brewAdvices?.ratio}
+              />
+              <TextWithBoldStart title="Zeit: " text={item.brewAdvices?.time} />
 
-            <TextWithBoldStart
-              title="Anmerkungen: "
-              text={item.brewAdvices?.notes}
-            />
-            {item?.brewAdvices?.recipe?.length ? (
-              <div>
-                <Typography style={{ fontWeight: "bold" }} variant={body1}>
-                  {item.brewAdvices?.recipe ? "Rezept: " : null}
-                </Typography>
+              <TextWithBoldStart
+                title="Anmerkungen: "
+                text={item.brewAdvices?.notes}
+              />
+              {item?.brewAdvices?.recipe?.length ? (
+                <div>
+                  <Typography style={{ fontWeight: "bold" }} variant={body1}>
+                    {item.brewAdvices?.recipe ? "Rezept: " : null}
+                  </Typography>
 
-                {item.brewAdvices.recipe.map((item) => {
-                  return (
-                    <Typography key={item} variant={body1}>
-                      {"- " + item}
-                    </Typography>
-                  );
-                })}
-              </div>
-            ) : null}
-            {item?.brewAdvices?.additionalRecipe?.length ? (
-              <div>
-                <Typography style={{ fontWeight: "bold" }} variant={body1}>
-                  {item.brewAdvices?.recipe ? "Rezept: " : null}
-                </Typography>
+                  {item.brewAdvices?.recipe.map((item) => {
+                    return (
+                      <Typography key={item} variant={body1}>
+                        {"- " + item}
+                      </Typography>
+                    );
+                  })}
+                </div>
+              ) : null}
+              {item?.brewAdvices?.additionalRecipe?.length ? (
+                <div>
+                  <Typography style={{ fontWeight: "bold" }} variant={body1}>
+                    {item.brewAdvices?.recipe ? "Rezept: " : null}
+                  </Typography>
 
-                {item.brewAdvices.additionalRecipe.map((item) => {
-                  return (
-                    <Typography key={item} variant={body1}>
-                      {"- " + item}
-                    </Typography>
-                  );
-                })}
-              </div>
-            ) : null}
-          </ThemeProvider>
-        </AccordionDetails>
-      </Accordion>
+                  {item.brewAdvices?.additionalRecipe.map((item) => {
+                    return (
+                      <Typography key={item} variant={body1}>
+                        {"- " + item}
+                      </Typography>
+                    );
+                  })}
+                </div>
+              ) : null}
+            </ThemeProvider>
+          </AccordionDetails>
+        </Accordion>
+      ) : null}
       <Accordion
         disabled={!additionalInfos}
         expanded={expanded === "panel2"}
