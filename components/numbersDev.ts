@@ -8,6 +8,7 @@ type BrewAdvices =
       notes?: string | undefined;
       recipe?: string[] | undefined;
       additionalRecipe?: string[] | undefined;
+      moreAdditionalRecipe?: string[] | undefined;
     }
   | undefined;
 
@@ -44,7 +45,7 @@ export type Numbers = CalendarItemType[];
 export const numbersDev: Numbers = [
   //______________Christiantar
   {
-    number: "1", //number is fix 6
+    number: "6", //number is fix 6
     userName: "Eric00",
     brewAdvices: {
       brewer: "V60 01, Cafec Abaca rot",
@@ -85,8 +86,52 @@ export const numbersDev: Numbers = [
 
   //_______________SebiEspresso
   {
-    number: "2", //number is fix 24
+    number: "24", //number is fix 24
     userName: "SebiEspresso",
+    brewAdvices: {
+      brewer: "",
+      grinding: "",
+      temperature: "",
+      ratio: "",
+      time: "",
+      notes:
+        "Der Kaffee ist sehr durchlässig. Bitte nicht wundern, wenn er auch trotz feinem Mahlgrad schnell läuft. Da er eine hohe Qualität hat, kann bzw. sollte er sogar etwas unterextrahiert werden.",
+      recipe: [
+        "Klassisch:",
+        "Brüher: V60",
+        "Ratio: 20gr Kaffee - 320gr Wasser (1:16)",
+        "Temperatur: 94°C bis kochend",
+        "Mahlgrad: fein bis fein-medium (C40 ca. 20 Klicks, Fellow Ode V2 4-5, DF64 mit SSP Cast V2 45-50, JX-Pro 3.3.0)",
+        "Aufguss JH One-Cup:",
+        "00:00 64 gr -> Swirl -> Bloom",
+        "00:45 128 gr",
+        "01:10 192 gr",
+        "01:30 256 gr",
+        "01:50 320 gr -> Gently Swirl",
+        "ca. 2:45 Draw Down",
+      ],
+      additionalRecipe: [
+        "Experimentell:",
+        "Brüher: V60",
+        "Ratio: 20gr Kaffee - 320gr Wasser (1:16)",
+        "Temperatur: 60°C und kochend",
+        "Mahlgrad: fein-medium (C40 ca. 22 Klicks, Fellow Ode V2 5, DF64 mit SSP Cast V2 50-55, JX-Pro 3.4.0)",
+        "Aufguss (Samo Bloom):",
+        "00:00 60 gr mit 60°C Wasser -> Swirl -> Bloom",
+        "02:00 - 02:30 auf 320 gr mit etwa 10gr/s aufgießen -> Draw Down",
+      ],
+      moreAdditionalRecipe: [
+        "Daily Routine (Switch):",
+        "Brüher: Hario Switch",
+        "Ratio: 20gr Kaffee - 300gr Wasser (1:15)",
+        "Temperatur: kochend",
+        "Mahlgrad: fein bis fein-medium (C40 ca. 20 Klicks, Fellow Ode V2 4-5, DF64 mit SSP Cast V2 45-50, JX-Pro 3.3.0)",
+        "Aufguss (Samo Bloom):",
+        "00:00 150 gr aufgießen mit Switch OFFEN!",
+        "00:45 300 gr aufgießen mit Switch GESCHLOSSEN",
+        "02:00 Switch öffnen -> Draw Down ca. 2:50",
+      ],
+    },
     additionalInfos: {
       roastery: "DAK Coffee Roasters",
       name: "Grenadine Vol. II",
@@ -108,7 +153,7 @@ export const numbersDev: Numbers = [
 
   //______________Christiantar
   {
-    number: "3",
+    number: "14",
     userName: "Christiantar",
     brewAdvices: {
       brewer: "V60",
@@ -172,7 +217,7 @@ export const numbersDev: Numbers = [
 
   //_____________________________Inalina
   {
-    number: "5",
+    number: "1",
     userName: "Inalina",
     brewAdvices: {
       brewer: "Hario V60 / Origami",
@@ -200,7 +245,7 @@ export const numbersDev: Numbers = [
     //1kg - 68
   },
   {
-    number: "6",
+    number: "12",
     userName: "Inalina",
     brewAdvices: {
       brewer: "Graycano, V60, Origami, Kalita, Fellow X, AeroPress",
@@ -254,7 +299,7 @@ export const numbersDev: Numbers = [
   //______________Richard
 
   {
-    number: "7",
+    number: "9",
     userName: "Richard",
     brewAdvices: {
       brewer: "V60",
@@ -277,7 +322,7 @@ export const numbersDev: Numbers = [
   },
 
   {
-    number: "8",
+    number: "15",
     userName: "Richard",
     brewAdvices: {
       brewer: "V60",
@@ -301,7 +346,7 @@ export const numbersDev: Numbers = [
   //____________________Konstantinos
 
   {
-    number: "9",
+    number: "19",
     userName: "Konstantinos",
     additionalInfos: {
       roastery: "Das CØFFE",
@@ -347,7 +392,7 @@ export const numbersDev: Numbers = [
 
   //___________Dirk_H
   {
-    number: "11",
+    number: "5",
     userName: "Dirk_H",
     brewAdvices: {
       brewer: "",
@@ -375,7 +420,7 @@ export const numbersDev: Numbers = [
     //1kg -  70€
   },
   {
-    number: "12",
+    number: "16",
     userName: "Dirk_H",
     brewAdvices: {
       brewer: "",
@@ -404,15 +449,15 @@ export const numbersDev: Numbers = [
   //____________Saxaddict
 
   {
-    number: "13",
+    number: "3",
     userName: "Saxaddict",
     brewAdvices: {
-      brewer: "",
-      grinding: "",
-      temperature: "",
-      ratio: "",
-      time: "",
-      recipe: [],
+      brewer: "V60",
+      grinding: "Comandante 23 Clicks",
+      temperature: "92-93 Grad",
+      ratio: "1:15 - 1:16",
+      time: "2:30 - 3:00",
+      recipe: ["Blooming plus 3 Pours"],
     },
     additionalInfos: {
       roastery: "Mokxa",
@@ -435,15 +480,15 @@ Ihre Söhne haben sich dem Abenteuer angeschlossen, und jeder bringt nun seine e
     //1kg -  60€
   },
   {
-    number: "14",
+    number: "18",
     userName: "Saxaddict",
     brewAdvices: {
-      brewer: "",
-      grinding: "",
-      temperature: "",
-      ratio: "",
-      time: "",
-      recipe: [],
+      brewer: "V60",
+      grinding: "Comandante 23 Clicks",
+      temperature: "92-93 Grad",
+      ratio: "1:15 - 1:16",
+      time: "2:30 - 3:00",
+      recipe: ["Blooming plus 3 Pours"],
     },
     additionalInfos: {
       roastery: "Mokxa",
@@ -470,7 +515,7 @@ Seine Bemühungen haben sich gelohnt, da wir heute einen seiner Kaffees probiere
 
   //________________Philipp82
   {
-    number: "15",
+    number: "7",
     userName: "Philipp82",
     additionalInfos: {
       roastery: "The Barn",
@@ -488,7 +533,7 @@ Seine Bemühungen haben sich gelohnt, da wir heute einen seiner Kaffees probiere
     //1kg -  72€
   },
   {
-    number: "16",
+    number: "17",
     userName: "Philipp82",
     additionalInfos: {
       roastery: "Father's Coffee Roastery",
@@ -507,7 +552,7 @@ Seine Bemühungen haben sich gelohnt, da wir heute einen seiner Kaffees probiere
 
   //______________thssnm
   {
-    number: "17",
+    number: "13",
     userName: "thssnm",
     brewAdvices: {
       brewer: "V60 - Aeropress",
@@ -533,7 +578,7 @@ Seine Bemühungen haben sich gelohnt, da wir heute einen seiner Kaffees probiere
     //1kg -  72€
   },
   {
-    number: "18",
+    number: "20",
 
     userName: "thssnm",
     brewAdvices: {
@@ -545,28 +590,26 @@ Seine Bemühungen haben sich gelohnt, da wir heute einen seiner Kaffees probiere
       recipe: [],
     },
     additionalInfos: {
-      roastery: "",
-      name: "",
-      farm: "",
-      producer: "",
-      city: "",
+      roastery: "DYLAN & HARPER",
+      name: "Liberica",
+      farm: "Badra Estates",
+      producer: "Jacob Mammen",
+      city: "Wiesbaden",
       taste: "",
-      roast: "",
-      variety: "",
-      region: "",
-      height: "",
-      processing: "",
-      recommendation: "",
-      url: "",
-      notes: "",
+      roast: "Light",
+      variety: "Liberica",
+      region: "Indien",
+      height: "900m",
+      processing: "Fully Washed",
+      url: "https://www.dylanandharper.de/kaffee/liberica/",
     },
-    //1kg -  €
+    //1kg -  68€
   },
 
   //___________majoj
 
   {
-    number: "19",
+    number: "8",
 
     userName: "majoj",
     brewAdvices: {
@@ -593,7 +636,7 @@ Seine Bemühungen haben sich gelohnt, da wir heute einen seiner Kaffees probiere
     //1kg -  50€
   },
   {
-    number: "20",
+    number: "22",
 
     userName: "majoj",
     brewAdvices: {
@@ -620,10 +663,82 @@ Seine Bemühungen haben sich gelohnt, da wir heute einen seiner Kaffees probiere
     },
     //1kg -  60€
   },
-  { number: "21", userName: "" },
-  { number: "22", userName: "" },
-  { number: "23", userName: "" },
-  { number: "24", userName: "" },
+
+  //______________Hedonii
+  {
+    number: "2",
+    userName: "Hedonii",
+    additionalInfos: {
+      name: "Colombia Pink Bourbon Natural Anaerobic 2023 Medium", //?2
+      roast: "Agtron (Gourmet) 90",
+      variety: "Pink Bourbon",
+      region: "Quindio, Kolumbien",
+      height: "1300m",
+      processing: "Natural Anaerobic",
+      cupScore: "87,75",
+    },
+    //1kg -  €
+  },
+  {
+    number: "21",
+    userName: "Hedonii",
+    additionalInfos: {
+      name: "Colombia Pink Bourbon Natural Anaerobic 2023 Light", //?2
+      roast: "Agtron (Gourmet) 90",
+      variety: "Pink Bourbon",
+      region: "Quindio, Kolumbien",
+      height: "1300m",
+      processing: "Natural Anaerobic",
+      cupScore: "87,75",
+    },
+    //1kg -  €
+  },
+
+  //_________Flattie/Fanatic
+  {
+    number: "11",
+    userName: "Flattie/Fanatic",
+    brewAdvices: {
+      grinding: "etwas feiner",
+      temperature: "etwas geringer",
+    },
+    additionalInfos: {
+      roastery: "Ertl (Eigenröstung)",
+      name: "Las Alegrias",
+      farm: "Finca Alegrias",
+      producer: "Juan David Puerta",
+      taste:
+        "Noten von Schokolade, Pistazie und tropischen Früchten wie Papaya und Melone",
+      variety: "Castillo",
+      region: "Quindio, Kolumbien",
+      height: "1420m",
+      processing: "Koji fermented Natural",
+      notes: `Ein experimenteller Kaffee, der sicherlich das ein oder andere Gemüt spaltet, aber ganz bestimmt eine Erfahrung wert ist: Die Castillo-Varietät wird unter Zugabe von Koji-Sporen (einem Pilz, der zur Herstellung traditioneller, japanischer fermentierter Lebensmittel verwendet wird) mehrere Tage als Natural getrocknet.  
+Das Ergebnis ist ein tiefer, schwerer und vor allem cremiger Kaffee mit hohem Mouthfeel, mit Noten von Schokolade, Pistazie und tropischen Früchten wie Papaya und Melone und der bei abnehmender Temperatur ein schwer zu beschreibendes Umami-Gefühl verbreitet ;)  
+Der Kaffee wurde auf einem Aillio Bullet in einer 500g Charge insgesamt 8:20 Min. mit einer Endtemperatur von 194 Grad (9 Grad after Crack) und einer Entwicklungszeit von 16 % geröstet.`,
+    },
+    //1kg -  €
+  },
+  {
+    number: "23",
+    userName: "Flattie/Fanatic",
+    additionalInfos: {
+      roastery: "Ertl (Eigenröstung)",
+      name: "Milagros",
+      producer: "verschiedene Kleinbauern",
+      taste:
+        "grüne Äpfeln und Noten von Pfirsich, tropischen Früchten und eine sanfte Mandel-Note",
+      roast: "",
+      variety: "Geisha",
+      region: "Huila, Kolumbien",
+      height: "1700 - 1900m",
+      processing: "Honey",
+      notes: `"Milagros" bedeutet Wunder. Das Ergebnis der gewissenhaften Arbeit einer ausgewählten Gruppe von wenigen Bauern in Huila. Der Geisha wird 24 bis 36 Stunden im Fruchtfleisch und danach 48 bis 60 Stunden im Tank fermentiert. Dann erfolgt die Entpulpung, wobei ca. 40% der Mucilage zurückbleiben. Anschließend wird er 14-20 Tage in der Sonne getrocknet.  
+Der Kaffee hat Geisha-typisch ein blumiges Profil mit einer komplexen Säurestruktur von grünen Äpfeln und Noten von Pfirsich, tropischen Früchten und einer sanften Mandel-Note.  
+Der Kaffee wurde auf einem Aillio Bullet in einer 500g Charge insgesamt 7:52 Min. mit einer Endtemperatur von 193 Grad (7 Grad after Crack) und einer Entwicklungszeit von 13 % geröstet.`,
+    },
+    //1kg -  €
+  },
 ];
 
 /*   

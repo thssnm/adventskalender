@@ -88,10 +88,27 @@ export default function BasicAccordion({
               {item?.brewAdvices?.additionalRecipe?.length ? (
                 <div>
                   <Typography style={{ fontWeight: "bold" }} variant={body1}>
-                    {item.brewAdvices?.recipe ? "Rezept: " : null}
+                    {item.brewAdvices?.recipe ? "2. Rezept: " : null}
                   </Typography>
 
                   {item.brewAdvices?.additionalRecipe.map((item) => {
+                    return (
+                      <Typography key={item} variant={body1}>
+                        {"- " + item}
+                      </Typography>
+                    );
+                  })}
+                </div>
+              ) : null}
+              {item?.brewAdvices?.moreAdditionalRecipe?.length ? (
+                <div>
+                  <Typography style={{ fontWeight: "bold" }} variant={body1}>
+                    {item.brewAdvices?.moreAdditionalRecipe
+                      ? "3. Rezept: "
+                      : null}
+                  </Typography>
+
+                  {item.brewAdvices?.moreAdditionalRecipe?.map((item) => {
                     return (
                       <Typography key={item} variant={body1}>
                         {"- " + item}

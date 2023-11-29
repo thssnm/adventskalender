@@ -8,6 +8,7 @@ type BrewAdvices =
       notes?: string | undefined;
       recipe?: string[] | undefined;
       additionalRecipe?: string[] | undefined;
+      moreAdditionalRecipe?: string[] | undefined;
     }
   | undefined;
 
