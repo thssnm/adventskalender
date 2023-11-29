@@ -43,79 +43,15 @@ export type CalendarItemType = {
 export type Numbers = CalendarItemType[];
 
 export const numbers: Numbers = [
-  { number: "10", userName: "" },
-  { number: "12", userName: "" },
-  { number: "1", userName: "" },
-  { number: "9", userName: "" },
-  { number: "17", userName: "" },
-  { number: "8", userName: "" },
-  { number: "6", userName: "" },
-  { number: "18", userName: "" },
-  { number: "2", userName: "" },
-  { number: "23", userName: "" },
-  { number: "13", userName: "" },
-  { number: "21", userName: "" },
-  { number: "5", userName: "" },
-  { number: "20", userName: "" },
-  { number: "3", userName: "" },
-  { number: "24", userName: "" },
-  { number: "19", userName: "" },
-  { number: "7", userName: "" },
-  { number: "15", userName: "" },
-  { number: "4", userName: "" },
-  { number: "16", userName: "" },
-  { number: "22", userName: "" },
-  { number: "11", userName: "" },
-  { number: "14", userName: "" },
-]; /*
-
-/*   
-
-    {
-    number: "",
-    
-    userName: "",
-    brewAdvices: {
-      brewer: "",
-      grinding: "",
-      temperature: "",
-      ratio: "",
-      time: "",
-      recipe: [""],
-    },
-    additionalInfos: {
-      roastery: "",
-      name: "",
-      farm: ""
-      producer: "",
-      city: "",
-      taste: "",
-      roast: "",
-      variety: "",
-      region: "",
-      height: "",
-      processing: "",
-      recommendation: "",
-      url: "",
-      notes: "",
-    },
-    //1kg -  €
-  }, 
-  
-  */
-
-/*
- 
-
-//______________Eric00
-
+  //______________Christiantar
   {
-    number: "1", //number is fix 6
+    number: "6", //number is fix 6
     userName: "Eric00",
     brewAdvices: {
       brewer: "V60 01, Cafec Abaca rot",
-      grinding:
-        "medium, ein wenig feiner als sonst. Ich bin bei 64mm SSP MP Scheiben 500-550 Micron ab Schleifpunkt. Eine Comandante besitze ich aktuell nicht, würde dort aber round about 20 Clicks anpeilen.",
+      grinding: `medium, ein wenig feiner als sonst. Ich bin bei 64mm SSP MP Scheiben 500-550 Micron ab Schleifpunkt. Eine Comandante besitze ich aktuell nicht, würde dort aber round about 20 Clicks anpeilen.  
+        Kingrinder K6 (70-75 Clicks)  
+        Empfehlung ist eine Mühle mit möglichst viel Klarheit`,
       temperature: "93-95 Grad",
       ratio: "18g/300g",
       time: "2:30 min",
@@ -150,8 +86,47 @@ export const numbers: Numbers = [
 
   //_______________SebiEspresso
   {
-    number: "2", //number is fix 24
+    number: "24", //number is fix 24
     userName: "SebiEspresso",
+    brewAdvices: {
+      notes:
+        "Der Kaffee ist sehr durchlässig. Bitte nicht wundern, wenn er auch trotz feinem Mahlgrad schnell läuft. Da er eine hohe Qualität hat, kann bzw. sollte er sogar etwas unterextrahiert werden.",
+      recipe: [
+        "Klassisch:",
+        "Brüher: V60",
+        "Ratio: 20gr Kaffee - 320gr Wasser (1:16)",
+        "Temperatur: 94°C bis kochend",
+        "Mahlgrad: fein bis fein-medium (C40 ca. 20 Klicks, Fellow Ode V2 4-5, DF64 mit SSP Cast V2 45-50, JX-Pro 3.3.0)",
+        "Aufguss JH One-Cup:",
+        "00:00 64 gr -> Swirl -> Bloom",
+        "00:45 128 gr",
+        "01:10 192 gr",
+        "01:30 256 gr",
+        "01:50 320 gr -> Gently Swirl",
+        "ca. 2:45 Draw Down",
+      ],
+      additionalRecipe: [
+        "Experimentell:",
+        "Brüher: V60",
+        "Ratio: 20gr Kaffee - 320gr Wasser (1:16)",
+        "Temperatur: 60°C und kochend",
+        "Mahlgrad: fein-medium (C40 ca. 22 Klicks, Fellow Ode V2 5, DF64 mit SSP Cast V2 50-55, JX-Pro 3.4.0)",
+        "Aufguss (Samo Bloom):",
+        "00:00 60 gr mit 60°C Wasser -> Swirl -> Bloom",
+        "02:00 - 02:30 auf 320 gr mit etwa 10gr/s aufgießen -> Draw Down",
+      ],
+      moreAdditionalRecipe: [
+        "Daily Routine (Switch):",
+        "Brüher: Hario Switch",
+        "Ratio: 20gr Kaffee - 300gr Wasser (1:15)",
+        "Temperatur: kochend",
+        "Mahlgrad: fein bis fein-medium (C40 ca. 20 Klicks, Fellow Ode V2 4-5, DF64 mit SSP Cast V2 45-50, JX-Pro 3.3.0)",
+        "Aufguss (Samo Bloom):",
+        "00:00 150 gr aufgießen mit Switch OFFEN!",
+        "00:45 300 gr aufgießen mit Switch GESCHLOSSEN",
+        "02:00 Switch öffnen -> Draw Down ca. 2:50",
+      ],
+    },
     additionalInfos: {
       roastery: "DAK Coffee Roasters",
       name: "Grenadine Vol. II",
@@ -171,10 +146,9 @@ export const numbers: Numbers = [
     //1kg - 132,50
   },
 
-
   //______________Christiantar
   {
-    number: "3",
+    number: "14",
     userName: "Christiantar",
     brewAdvices: {
       brewer: "V60",
@@ -198,12 +172,11 @@ export const numbers: Numbers = [
       variety: "Caturra",
       region: "Acatenango, Guatemala",
       processing: "Carbonic maceration",
-      recommendation: "",
       cupScore: "88+",
       url: "https://roasticious.com",
     },
 
-    //1kg - 60 
+    //1kg - 60
   },
   {
     number: "4",
@@ -238,7 +211,7 @@ export const numbers: Numbers = [
 
   //_____________________________Inalina
   {
-    number: "5",
+    number: "1",
     userName: "Inalina",
     brewAdvices: {
       brewer: "Hario V60 / Origami",
@@ -249,6 +222,7 @@ export const numbers: Numbers = [
     },
     additionalInfos: {
       roastery: "Seekind",
+      city: "Ravensburg",
       name: "Forest Cósmic",
       farm: "San Luis",
       producer: "Omar Arango",
@@ -265,7 +239,7 @@ export const numbers: Numbers = [
     //1kg - 68
   },
   {
-    number: "6",
+    number: "12",
     userName: "Inalina",
     brewAdvices: {
       brewer: "Graycano, V60, Origami, Kalita, Fellow X, AeroPress",
@@ -319,7 +293,7 @@ export const numbers: Numbers = [
   //______________Richard
 
   {
-    number: "7",
+    number: "9",
     userName: "Richard",
     brewAdvices: {
       brewer: "V60",
@@ -342,7 +316,7 @@ export const numbers: Numbers = [
   },
 
   {
-    number: "8",
+    number: "15",
     userName: "Richard",
     brewAdvices: {
       brewer: "V60",
@@ -366,10 +340,10 @@ export const numbers: Numbers = [
   //____________________Konstantinos
 
   {
-    number: "9",
+    number: "19",
     userName: "Konstantinos",
     additionalInfos: {
-      roastery: "Cøffe",
+      roastery: "Das CØFFE",
       name: "Colombia",
       producer: "Wilson Ordonez",
       city: "Düsseldorf",
@@ -380,6 +354,8 @@ export const numbers: Numbers = [
       height: "1850m",
       processing: "washed",
       url: "https://dascoffe.store/products/colombia-250g?variant=46840961401177",
+      notes: `Das CØFFE röstet zwar nicht erst seit gestern, haben aber seit diesem Jahr deutlich mehr Varietät ins Haus gebracht.  
+        Durch die guten Beziehungen konnten die Betreiben viele Kaffees aus Kolumbien sourcen und starten langsam so richtig durch. Den Kaffee habe ich persönlich noch nicht getestet, hoffe aber, dass er euch geschmeckt hat!`,
     },
     //1kg -  48,90 €
   },
@@ -389,23 +365,364 @@ export const numbers: Numbers = [
     userName: "Konstantinos",
     additionalInfos: {
       roastery: "Rösterei VIER",
+      name: "Frutos Rojos",
       farm: "El Paraiso",
       producer: "Diego Samuel Bermudez",
       city: "Düsseldorf",
-      taste: "Pfirsich - Joghurt - Erdbeere",
+      taste: "Pfirsich, Erdbeere, Jogurt",
+      roast: "Omni",
       variety: "Castillo",
       height: "1950m",
       region: "Cauca / Piendamo, Kolumbien",
       microlot: "Frutos Rojos",
-      processing: "washed & anaerobic",
+      processing: "Washed Anaerobic",
       recommendation: "Siebträger, Filter, French Press, Aeropress",
       url: "https://roesterei-vier.de/diegobermudezfrutosrojos",
+      notes: `Das Benchmark-Lot von Diego Bermudez geröstet von Rösterei Vier in Düsseldorf.  
+        Kein anderes Lot von Ihm ist so sauber und zeigt die weiteren Potenziale von Fermentation und Kaffee.`,
     },
     //1kg - 50,90 €
   },
 
+  //___________Dirk_H
+  {
+    number: "5",
+    userName: "Dirk_H",
+    additionalInfos: {
+      roastery: "Leuchtfeuer",
+      name: "No.2",
+      producer: "Don Eli - Carlos Montero",
+      city: "Wedel",
+      taste: "Passionsfrucht, süße Mangostane und ein Coca Cola Finish",
+      roast: "Light",
+      variety: "Catuai",
+      region: "Tarrazú | La Pastora, Costa Rica",
+      height: "1900m | 2000m",
+      processing: "Natural Anaerobic, 5 tage tank fermented, slow dried",
+      cupScore: "88",
+      url: "https://www.leuchtfeuer.coffee/products/specialty-coffee-filterkaffee-costa-rica-no2",
+      notes: "Experimental Lot, Ernte 2022",
+    },
+    //1kg -  70€
+  },
+  {
+    number: "16",
+    userName: "Dirk_H",
+    additionalInfos: {
+      roastery: "Elbgold",
+      name: "La Pachuca",
+      producer: "Roberto Mata Naranjo",
+      city: "Hamburg",
+      taste: "Rote Grütze, Weisse Melisse, Kandis",
+      variety: "Caturra Amarillo",
+      region: " Tarrazú | Valle de Dota, Costa Rica",
+      processing: "Juicy Honey Fermentation",
+      url: "https://www.elbgoldshop.com/products/filterkaffee-la-pachuca-juicy-honey-fermentation-0250g",
+      notes:
+        " Juicy Honey Fermentation: Dafür werden die Kirschen geschält und in ihrer eigenen Mucilage plus dem Fruchtfleisch eines weiteren Lots 120 Stunden fermentiert.",
+    },
+    //1kg -  71,60€
+  },
 
+  //____________Saxaddict
 
+  {
+    number: "3",
+    userName: "Saxaddict",
+    brewAdvices: {
+      brewer: "V60",
+      grinding: "Comandante 23 Clicks",
+      temperature: "92-93 Grad",
+      ratio: "1:15 - 1:16",
+      time: "2:30 - 3:00",
+      recipe: ["Blooming plus 3 Pours"],
+    },
+    additionalInfos: {
+      roastery: "Mokxa",
+      name: "RIVENSE",
+      producer: "Isabel Rojas und dessen Familie",
+      city: "Strasbourg, France",
+      taste:
+        "Un café complexe et suave, sur des notes d'ananas confit, muscat et zestes d'agrumes",
+      roast: "Omni",
+      variety: "Caturra",
+      region: "Chirrippo, Costa Rica",
+      height: "2000m",
+      processing: "Anaerobe Fermentation",
+      recommendation: "Siebträger, Frechpress, Bialetti, Chemex, Aeropress",
+      cupScore: "87",
+      url: "https://www.cafemokxa.com/nos-cafes/459-5240-costa-rica-rivense.html#/25-conditionnement-250grs/29-mouture-grains",
+      notes: `Das Ehepaar Isabel Rojas und Regulo Ureña, das in einem Gebiet mit hoher Biodiversität lebt, nimmt seine Verantwortung für die Umwelt sehr ernst. Sie haben ihre Farm Café Rivense auf kreative Weise aufgebaut und wenden nachhaltige Methoden an, die von der Beschattung der Kaffeebäume bis hin zur Bodenanalyse reichen, um den Wasserverbrauch und den Einsatz von Betriebsmitteln zu minimieren.  
+Ihre Söhne haben sich dem Abenteuer angeschlossen, und jeder bringt nun seine eigenen Fähigkeiten ein, so dass sie jeden Schritt der Verarbeitung der Bohnen akribisch verfolgen können!`,
+    },
+    //1kg -  60€
+  },
+  {
+    number: "18",
+    userName: "Saxaddict",
+    brewAdvices: {
+      brewer: "V60",
+      grinding: "Comandante 23 Clicks",
+      temperature: "92-93 Grad",
+      ratio: "1:15 - 1:16",
+      time: "2:30 - 3:00",
+      recipe: ["Blooming plus 3 Pours"],
+    },
+    additionalInfos: {
+      roastery: "Mokxa",
+      name: "EL NIÑO",
+      producer: "Jairon Hernan Moreno Ruiz",
+      city: "Strasbourg, France",
+      taste:
+        "Un café juteux aux notes fruitées de prune et myrtille exprimant une belle acidité sur le fruit de la passion",
+      roast: "Hell",
+      variety: "Parainema",
+      region: "La Leona, Santa Barbara, Honduras",
+      height: "1500m",
+      processing: "Gewaschen",
+      recommendation: "V60, Chemex, Aeropress, Frechpress",
+      cupScore: "87",
+      url: "https://www.cafemokxa.com/nos-cafes/466-5403-honduras-el-nino.html#/25-conditionnement-250grs/29-mouture-grains",
+      notes: `Jairon Moreno stammt aus einer Familie von Kaffeebauern.  
+Nachdem er sieben Jahre lang beharrlich Kaffeebäume in einer Umgebung angebaut hatte, in der die Temperaturen zu kalt waren, verkaufte und kaufte er eine verlassene Plantage auf dem Gebiet von Santa Barbara, das von einem milderen Klima profitierte.  
+Jairo arbeitete weiterhin hart daran, den alten Kaffeebäumen neues Leben einzuhauchen und pflanzte neue Sorten mit einer Parzelle mit Parainema und Pacamara.  
+Seine Bemühungen haben sich gelohnt, da wir heute einen seiner Kaffees probieren.`,
+    },
+    //1kg -  48€
+  },
 
-  ________________Philipp82
+  //________________Philipp82
+  {
+    number: "7",
+    userName: "Philipp82",
+    additionalInfos: {
+      roastery: "The Barn",
+      name: "SHANTAWENE",
+      farm: "Daye Bensa",
+      city: "Berlin",
+      taste: "Passionsfrucht, Erdbeere und Banane",
+      roast: "Filter",
+      variety: "Heirloom",
+      region: "Sidama, Äthiopien",
+      height: "1900m - 2300m",
+      processing: "Anaerob",
+      url: "https://de.thebarn.de/de/products/shantawene",
+    },
+    //1kg -  72€
+  },
+  {
+    number: "17",
+    userName: "Philipp82",
+    additionalInfos: {
+      roastery: "Father's Coffee Roastery",
+      name: "Keramo Natural",
+      farm: "Daye Bensa",
+      city: "Ostrava, Tschechien",
+      taste: "Blaubeere, Käsekuchen, Muscovado-Zucker",
+      variety: "Heirloom (indigenous varieties)",
+      region: "Keramo Village, Sidama, Äthiopien",
+      height: "2300m",
+      processing: "Natural",
+      url: "https://fathers.cz/product/keramo-f/?lang=en",
+    },
+    //1kg -  64,40€
+  },
+
+  //______________thssnm
+  {
+    number: "13",
+    userName: "thssnm",
+    brewAdvices: {
+      brewer: "V60 - Aeropress",
+      temperature: "94 Grad",
+      ratio: "19g/360g",
+      time: "2:45",
+      notes:
+        "Ich kenne diesen Kaffee noch nicht deswegen ist das die Brühempfehlung des Rösters",
+    },
+    additionalInfos: {
+      roastery: "backyard coffee",
+      name: "LA LUIS",
+      producer: "Juan Pablos Velez",
+      city: "Frankfurt",
+      taste: "Lychee, Honig, Rote Früchte",
+      region: "Kolumbien",
+      processing: "honey fermentation",
+      recommendation: "V60 - Aeropress - Frenchpress (etwas gröber mahlen)",
+      url: "https://www.backyard-coffee.com/La-Luis-250g-Filterkaffee-aus-Kolumbien/CD.LALUI0250",
+      notes:
+        "Für mich ein neuer Kaffee aber die Rösterei ist mir gut bekannt. Ich bestelle dort hin und wieder Filterkaffee sowie Espresso.",
+    },
+    //1kg -  72€
+  },
+  {
+    number: "20",
+    userName: "thssnm",
+    additionalInfos: {
+      roastery: "DYLAN & HARPER",
+      name: "Liberica",
+      farm: "Badra Estates",
+      producer: "Jacob Mammen",
+      city: "Wiesbaden",
+      taste: "",
+      roast: "Light",
+      variety: "Liberica",
+      region: "Indien",
+      height: "900m",
+      processing: "Fully Washed",
+      url: "https://www.dylanandharper.de/kaffee/liberica/",
+    },
+    //1kg -  68€
+  },
+
+  //___________majoj
+
+  {
+    number: "8",
+    userName: "majoj",
+    additionalInfos: {
+      roastery: "ERNST KAFFERÖSTER",
+      name: "ETHIOPIA SHANTAWENE FILTER",
+      farm: "Shantawene / Daye Bensa",
+      city: "Köln",
+      taste: "Wilde Beere, Pfirsich, Bergamotte",
+      roast: "Filter",
+      variety: "mixed heirloom",
+      region: "Sidama Zone, Äthiopien",
+      height: "1990m - 2190m",
+      processing: "natural",
+      url: "https://www.ernst-kaffee.de/products/ethiopia-shantawene-filter",
+    },
+    //1kg -  50€
+  },
+  {
+    number: "22",
+    userName: "majoj",
+    additionalInfos: {
+      roastery: "ERNST KAFFERÖSTER",
+      name: "COSTA RICA JUANACHUTE FILTER",
+      farm: "Juanachute - Santa Maria de Dota",
+      producer: "Luis Anastasio Castro",
+      city: "Köln",
+      taste: "Brombeere, Blaubeere, Oolong",
+      roast: "Filter",
+      variety: "Caturra, Catuai",
+      region: "Tarrazú, Costa Rica",
+      height: "1800m",
+      processing: "red honey",
+      url: "https://www.ernst-kaffee.de/products/manos-juntas-filter-2",
+    },
+    //1kg -  60€
+  },
+
+  //______________Hedonii
+  {
+    number: "2",
+    userName: "Hedonii",
+    additionalInfos: {
+      name: "Colombia Pink Bourbon Natural Anaerobic 2023 Medium", //?2
+      roast: "Agtron (Gourmet) 90",
+      variety: "Pink Bourbon",
+      region: "Quindio, Kolumbien",
+      height: "1300m",
+      processing: "Natural Anaerobic",
+      cupScore: "87,75",
+    },
+    //1kg -  €
+  },
+  {
+    number: "21",
+    userName: "Hedonii",
+    additionalInfos: {
+      name: "Colombia Pink Bourbon Natural Anaerobic 2023 Light", //?2
+      roast: "Agtron (Gourmet) 90",
+      variety: "Pink Bourbon",
+      region: "Quindio, Kolumbien",
+      height: "1300m",
+      processing: "Natural Anaerobic",
+      cupScore: "87,75",
+    },
+    //1kg -  €
+  },
+  {
+    number: "11",
+    userName: "Flattie/Fanatic",
+    brewAdvices: {
+      grinding: "etwas feiner",
+      temperature: "etwas geringer",
+    },
+    additionalInfos: {
+      roastery: "Ertl (Eigenröstung)",
+      name: "Las Alegrias",
+      farm: "Finca Alegrias",
+      producer: "Juan David Puerta",
+      taste:
+        "Noten von Schokolade, Pistazie und tropischen Früchten wie Papaya und Melone",
+      variety: "Castillo",
+      region: "Quindio, Kolumbien",
+      height: "1420m",
+      processing: "Koji fermented Natural",
+      notes: `Ein experimenteller Kaffee, der sicherlich das ein oder andere Gemüt spaltet, aber ganz bestimmt eine Erfahrung wert ist: Die Castillo-Varietät wird unter Zugabe von Koji-Sporen (einem Pilz, der zur Herstellung traditioneller, japanischer fermentierter Lebensmittel verwendet wird) mehrere Tage als Natural getrocknet.  
+Das Ergebnis ist ein tiefer, schwerer und vor allem cremiger Kaffee mit hohem Mouthfeel, mit Noten von Schokolade, Pistazie und tropischen Früchten wie Papaya und Melone und der bei abnehmender Temperatur ein schwer zu beschreibendes Umami-Gefühl verbreitet ;)  
+Der Kaffee wurde auf einem Aillio Bullet in einer 500g Charge insgesamt 8:20 Min. mit einer Endtemperatur von 194 Grad (9 Grad after Crack) und einer Entwicklungszeit von 16 % geröstet.`,
+    },
+    //1kg -  €
+  },
+
+  //_________Flattie/Fanatic
+  {
+    number: "23",
+    userName: "Flattie/Fanatic",
+    additionalInfos: {
+      roastery: "Ertl (Eigenröstung)",
+      name: "Milagros",
+      producer: "verschiedene Kleinbauern",
+      taste:
+        "grüne Äpfeln und Noten von Pfirsich, tropischen Früchten und eine sanfte Mandel-Note",
+      roast: "",
+      variety: "Geisha",
+      region: "Huila, Kolumbien",
+      height: "1700 - 1900m",
+      processing: "Honey",
+      notes: `"Milagros" bedeutet Wunder. Das Ergebnis der gewissenhaften Arbeit einer ausgewählten Gruppe von wenigen Bauern in Huila. Der Geisha wird 24 bis 36 Stunden im Fruchtfleisch und danach 48 bis 60 Stunden im Tank fermentiert. Dann erfolgt die Entpulpung, wobei ca. 40% der Mucilage zurückbleiben. Anschließend wird er 14-20 Tage in der Sonne getrocknet.  
+Der Kaffee hat Geisha-typisch ein blumiges Profil mit einer komplexen Säurestruktur von grünen Äpfeln und Noten von Pfirsich, tropischen Früchten und einer sanften Mandel-Note.  
+Der Kaffee wurde auf einem Aillio Bullet in einer 500g Charge insgesamt 7:52 Min. mit einer Endtemperatur von 193 Grad (7 Grad after Crack) und einer Entwicklungszeit von 13 % geröstet.`,
+    },
+    //1kg -  €
+  },
+];
+
+/*   
+
+    {
+    number: "",
+    
+    userName: "",
+    brewAdvices: {
+      brewer: "",
+      grinding: "",
+      temperature: "",
+      ratio: "",
+      time: "",
+      recipe: [],
+    },
+    additionalInfos: {
+      roastery: "",
+      name: "",
+      farm: "",
+      producer: "",
+      city: "",
+      taste: "",
+      roast: "",
+      variety: "",
+      region: "",
+      height: "",
+      processing: "",
+      recommendation: "",
+      url: "",
+      notes: "",
+    },
+    //1kg -  €
+  }, 
+  
   */
