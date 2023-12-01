@@ -388,6 +388,12 @@ export const numbers: Numbers = [
   {
     number: "5",
     userName: "Dirk_H",
+    brewAdvices: {
+      grinding: "mittel-fein bis fein",
+      temperature: "96-100°C",
+      ratio: "1:16",
+      time: "2:40 - 3:00",
+    },
     additionalInfos: {
       roastery: "Leuchtfeuer",
       name: "No.2",
@@ -408,6 +414,12 @@ export const numbers: Numbers = [
   {
     number: "16",
     userName: "Dirk_H",
+    brewAdvices: {
+      grinding: "eher fein mahlen",
+      ratio: "1:16",
+      time: "2:20 - 2:40",
+      notes: "Schmeckt optimal, wenn man ihn etwas runterkühlen lässt",
+    },
     additionalInfos: {
       roastery: "Elbgold",
       name: "La Pachuca",
