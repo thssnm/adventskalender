@@ -631,6 +631,20 @@ Seine Bemühungen haben sich gelohnt, da wir heute einen seiner Kaffees probiere
   {
     number: "2",
     userName: "Hedonii",
+    brewAdvices: {
+      brewer: "Flachbett-Brüher mit Kalita 185 Filter (z.B. Orea V3)",
+      grinding: "fein, Comandante: 18 Clicks",
+      ratio: "18g - 300g",
+      time: "2:15",
+      notes: "Ergibt ca. 250g Brühkaffee mit 1,4% TDS / 20% EY",
+      recipe: [
+        "0:00 75g Bloom",
+        "0:30 75g Pour",
+        "1:00 75g Pour",
+        "1:30 75g Pour",
+        "2:15 Draw Down",
+      ],
+    },
     additionalInfos: {
       name: "Colombia Pink Bourbon Natural Anaerobic 2023 Medium", //?2
       roast: "Agtron (Gourmet) 90",
@@ -645,6 +659,20 @@ Seine Bemühungen haben sich gelohnt, da wir heute einen seiner Kaffees probiere
   {
     number: "21",
     userName: "Hedonii",
+    brewAdvices: {
+      brewer: "Flachbett-Brüher mit Kalita 185 Filter (z.B. Orea V3)",
+      grinding: "fein, Comandante: 18 Clicks",
+      ratio: "18g - 300g",
+      time: "2:15",
+      notes: "Ergibt ca. 250g Brühkaffee mit 1,4% TDS / 20% EY",
+      recipe: [
+        "0:00 75g Bloom",
+        "0:30 75g Pour",
+        "1:00 75g Pour",
+        "1:30 75g Pour",
+        "2:15 Draw Down",
+      ],
+    },
     additionalInfos: {
       name: "Colombia Pink Bourbon Natural Anaerobic 2023 Light", //?2
       roast: "Agtron (Gourmet) 90",
