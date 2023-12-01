@@ -140,7 +140,7 @@ export default function BasicAccordion({
             >
               {additionalInfos
                 ? "Auflösung"
-                : "Die Auflösung gibt es wie immer erst um 19 Uhr."}
+                : "Die Auflösung gibt es wie immer erst um 15 Uhr."}
             </Typography>
           </ThemeProvider>
         </AccordionSummary>

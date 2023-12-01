@@ -17,7 +17,7 @@ export const Overlay = ({
   const additionalInfos =
     devMode ||
     isOldItem ||
-    (hour >= 19 && time.getDate() === Number(item.number));
+    (hour >= 15 && time.getDate() === Number(item.number));
 
   return (
     <div>
