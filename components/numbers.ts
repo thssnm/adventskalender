@@ -648,6 +648,7 @@ Seine Bemühungen haben sich gelohnt, da wir heute einen seiner Kaffees probiere
     additionalInfos: {
       name: "Colombia Pink Bourbon Natural Anaerobic 2023 Medium", //?2
       roast: "Agtron (Gourmet) 75",
+      roastery: "Hedonii (Eigenröstung)", 
       variety: "Pink Bourbon",
       region: "Quindio, Kolumbien",
       height: "1300m",
