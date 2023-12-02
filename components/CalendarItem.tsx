@@ -89,7 +89,7 @@ export const CalendarItem = ({
       <Modal open={open} onClose={handleClose}>
         <Box sx={style}>
           <ModalClose color="primary" variant="soft" />
-          <Overlay item={item} devMode={devmode} />
+          <Overlay item={item} devMode={devmode} count={count} />
         </Box>
       </Modal>
     </>

@@ -5,9 +5,11 @@ import BasicAccordion from "./BasicAccordion";
 export const Overlay = ({
   item,
   devMode,
+  count,
 }: {
   item: CalendarItemType;
   devMode: boolean;
+  count: number;
 }) => {
   const time = new Date();
   const hour = time.getHours();
@@ -15,6 +17,7 @@ export const Overlay = ({
   const isOldItem = time.getDate() > Number(item.number);
 
   const additionalInfos =
+    count > 9 ||
     devMode ||
     isOldItem ||
     (hour >= 15 && time.getDate() === Number(item.number));
