@@ -597,7 +597,7 @@ Seine Bemühungen haben sich gelohnt, da wir heute einen seiner Kaffees probiere
       grinding: "Comandante: 22 Clicks",
       temperature: "93 Grad dann 70 - 75 Grad",
       ratio: "19g - 280g",
-      time: "3?00",
+      time: "3:00",
       notes: "Hybrid Methode im Hario Switch",
       recipe: [
         "1. Bloom 60g bis 30 Sek",
@@ -634,7 +634,7 @@ Seine Bemühungen haben sich gelohnt, da wir heute einen seiner Kaffees probiere
       grinding: "Comandante: 22 Clicks",
       temperature: "93 Grad dann 70 - 75 Grad",
       ratio: "19g - 280g",
-      time: "3?00",
+      time: "3:00",
       notes: "Hybrid Methode im Hario Switch",
       recipe: [
         "1. Bloom 60g bis 30 Sek",
