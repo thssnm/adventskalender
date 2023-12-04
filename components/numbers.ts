@@ -603,7 +603,9 @@ Seine Bemühungen haben sich gelohnt, da wir heute einen seiner Kaffees probiere
       region: "Sidama Zone, Äthiopien",
       height: "1990m - 2190m",
       processing: "natural",
-      url: "https://www.ernst-kaffee.de/products/ethiopia-shantawene-filter",
+      notes:
+        "Offenbar ist der Kaffee nicht mehr im Shop erhaeltlich deswegen geht der Link auf die Homepage",
+      url: "https://www.ernst-kaffee.de",
     },
     //1kg -  50€
   },
