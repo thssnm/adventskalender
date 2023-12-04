@@ -592,6 +592,23 @@ Seine Bemühungen haben sich gelohnt, da wir heute einen seiner Kaffees probiere
   {
     number: "8",
     userName: "majoj",
+    brewAdvices: {
+      brewer: "Hario Switch",
+      grinding: "Comandante: 22 Clicks",
+      temperature: "93 Grad dann 70 - 75 Grad",
+      ratio: "19g - 280g",
+      time: "3?00",
+      notes: "Hybrid Methode im Hario Switch",
+      recipe: [
+        "1. Bloom 60g bis 30 Sek",
+        "2. Bloom 60g bis 60 Sek.",
+        "Jetzt die Temperatur durch Zugabe von kaltem Wasser in den Kessel senken auf 70-75° für Immersion.",
+        "Switch geschlossen bei 1:00",
+        "Zügig bis auf 280g auffüllen",
+        "bei 1:45 Switch öffnen",
+        "DD bei ca. 3:00",
+      ],
+    },
     additionalInfos: {
       roastery: "ERNST KAFFERÖSTER",
       name: "ETHIOPIA SHANTAWENE FILTER",
@@ -612,6 +629,23 @@ Seine Bemühungen haben sich gelohnt, da wir heute einen seiner Kaffees probiere
   {
     number: "22",
     userName: "majoj",
+    brewAdvices: {
+      brewer: "Hario Switch",
+      grinding: "Comandante: 22 Clicks",
+      temperature: "93 Grad dann 70 - 75 Grad",
+      ratio: "19g - 280g",
+      time: "3?00",
+      notes: "Hybrid Methode im Hario Switch",
+      recipe: [
+        "1. Bloom 60g bis 30 Sek",
+        "2. Bloom 60g bis 60 Sek.",
+        "Jetzt die Temperatur durch Zugabe von kaltem Wasser in den Kessel senken auf 70-75° für Immersion.",
+        "Switch geschlossen bei 1:00",
+        "Zügig bis auf 280g auffüllen",
+        "bei 1:45 Switch öffnen",
+        "DD bei ca. 3:00",
+      ],
+    },
     additionalInfos: {
       roastery: "ERNST KAFFERÖSTER",
       name: "COSTA RICA JUANACHUTE FILTER",
@@ -650,7 +684,7 @@ Seine Bemühungen haben sich gelohnt, da wir heute einen seiner Kaffees probiere
     additionalInfos: {
       name: "Colombia Pink Bourbon Natural Anaerobic 2023 Medium", //?2
       roast: "Agtron (Gourmet) 75",
-      roastery: "Eigenröstung", 
+      roastery: "Eigenröstung",
       variety: "Pink Bourbon",
       region: "Quindio, Kolumbien",
       height: "1300m",
