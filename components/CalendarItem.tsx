@@ -36,10 +36,12 @@ export const CalendarItem = ({
 
   const number = devmode ? 10 : 11;
 
-  const isActive =
+  /*   const isActive =
     (Number(item.number) <= new Date().getDate() &&
       new Date().getMonth() === number) ||
-    count > 9;
+    count > 9; */
+
+  const isActive = true;
 
   const onPressItem = () => {
     if (open) {
