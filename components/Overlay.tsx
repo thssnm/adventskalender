@@ -16,12 +16,12 @@ export const Overlay = ({
 
   const isOldItem = time.getDate() > Number(item.number);
 
-  const additionalInfos =
-    count > 9 ||
+  const additionalInfos = true;
+  /*     count > 9 ||
     devMode ||
     isOldItem ||
     (hour >= 15 && time.getDate() === Number(item.number));
-
+ */
   return (
     <div>
       <div
